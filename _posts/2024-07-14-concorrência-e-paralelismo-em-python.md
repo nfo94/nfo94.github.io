@@ -4,7 +4,7 @@ layout: post
 date: 2024-07-14
 tags: python asyncio threading multiprocessing concorrência paralelismo
 description: resumo sobre concorrência e paralelismo em Python
-published: false
+published: true
 ---
 
 O objetivo deste texto é dar um resumo direto ao ponto dos **conceitos básicos necessários para entender sobre concorrência a paralelismo na linguagem Python**. Recomendo ter uma base mínima sobre o assunto ou aliar esse texto com estudo em outras fontes. Todas as referências estão ao final do texto. 
@@ -101,18 +101,27 @@ No Python paralelismo é alcançado, por exemplo, com a lib `multiprocessing`, o
 </p>
 
 ## <a name="7"></a>A biblioteca asyncio
-Existem formas diferentes de se atingir concorrência e paralelismo em Python e podemos utilizar algumas bibliotecas para otimizar nosso código, a depender do tipo de operação que estamos lidando, I/O bound ou CPU bound. O [`asyncio`](https://docs.python.org/pt-br/3/library/asyncio.html) é uma lib para atingir concorrência usando o `async` e `await`. Pela documentação:
+Existem formas diferentes de se atingir concorrência e paralelismo em Python e podemos utilizar algumas bibliotecas para otimizar nosso código, a depender do tipo de operação que estamos lidando, I/O bound ou CPU bound. O [`asyncio`](https://docs.python.org/pt-br/3/library/asyncio.html) é uma **lib para atingir concorrência usando o `async` e `await`**. Pela documentação:
 
 > O asyncio é usado como uma base para várias estruturas assíncronas do Python que fornecem rede e servidores web de alto desempenho, bibliotecas de conexão de banco de dados, filas de tarefas distribuídas etc.
 
 Como você pode imaginar, essa lib é adequada para otimizar tarefas I/O bound, onde temos tempo de espera de network, escrita em disco, etc. Numa operação CPU bound não há espera, dependemos apenas da velocidade de cálculo da CPU.
 
 ## <a name="8"></a>A biblioteca threading
-A lib [`threading`](https://docs.python.org/pt-br/3/library/threading.html) do Python 
+**A lib [`threading`](https://docs.python.org/pt-br/3/library/threading.html) do Python nos permite operar mais de uma thread**, porém, continuamos a lidar com um core de CPU e um processo Python, e lembre-se de que esse é um caso de preemptive multitasking onde o sistema operacional faz a troca de tarefas por nós. A lib também é mais útil para otimizar operações I/O bound.
+
+Sobre o `threading`, o site [Real Python](https://realpython.com/python-concurrency) traz alguns pontos importantes:
+
+> Porque o sistema operacional está no controle de quando uma task será interrompida e outra task irá começar, qualquer dado que for compartilhado entre as threads precisa ser protegido, ou _thread-safe_. Infelizmente `requests.Session()` não é _thread-safe_. Existem várias estratégias para fazer o acesso de dados _thread-safe_ a depender de que dado é e como você está usando. Uma delas é usar estruturas de dados _thread-safe_ como `Queue` do módulo `queue` do Python.
+
+Encontramos a documentação do [`queue` aqui](https://docs.python.org/pt-br/3/library/queue.html#module-queue).
 
 ## <a name="9"></a>A biblioteca multiprocessing
+Sobre a lib [`multiprocessing`](https://docs.python.org/pt-br/3/library/multiprocessing.html) na documentação do Python:
 
-[`multiprocessing`](https://docs.python.org/pt-br/3/library/multiprocessing.html)
+> `multiprocessing` é um pacote que suporta gerar processos usando uma API similar ao módulo `threading`. O pacote `multiprocessing` oferece concorrência tanto local quanto remota, efetivamente desviando o GIL usando sub-processos ao invés de threads. Por isso o **módulo `multiprocessing` permite o programador aproveitar múltiplos processadores em uma máquina**.
+
+Vale apontar que rodar mais de um processo em diferentes cores de CPU não significa desabilitar o GIL, e sim que cada processo terá o seu próprio GIL. Por aproveitar de mais de um core de CPU, compartilhando workloads pesados de CPU entre os múltiplos cores dispiníveis, a lib é mais adequada a CPU bound.
 
 ---
 _Fontes_:
@@ -121,4 +130,6 @@ FOWLER, Matthew. [Python Concurrency with asyncio](https://www.amazon.com.br/Pyt
 
 MACHADO, Francis Berenger; MAIA, Luiz Paulo. [Arquitetura de Sistemas Operacionais: Incluindo Exercícios com o Simulador SOSIM e Questões do ENADE](https://www.amazon.com.br/Arquitetura-Sistemas-Operacionais-Incluindo-Exerc%C3%ADcios/dp/8521622104/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=150WW8OAI7BK3&dib=eyJ2IjoiMSJ9.A1ZhX8ImePrgue4fqDmOFhTfVbkIf5kIlU2jq5kd4laG4KvRRBXQekMR1rhx34OdkcpofR8kV8Ln0SjtzbN9on9rfe1wq8VNaqPBEYyuFuE.byPfWCKB9260AyrDAXjLab022xEJbcexS5jc_qZgex0&dib_tag=se&keywords=Arquitetura+de+Sistemas+Operacionais%3A+Incluindo+Exerc%C3%ADcios+com+o+Simulador+SOSIM+e+Quest%C3%B5es+do+ENADE&qid=1720896386&sprefix=arquitetura+de+sistemas+operacionais+incluindo+exerc%C3%ADcios+com+o+simulador+sosim+e+quest%C3%B5es+do+enade%2Caps%2C137&sr=8-1). Rio de Janeiro: LTC, 2013.
 
-[Thread (computing) by Wikipedia](https://en.wikipedia.org/wiki/Thread_(computing))
+[Thread (computing) por Wikipedia](https://en.wikipedia.org/wiki/Thread_(computing))
+
+[Speed Up Your Python Program With Concurrency por Real Python](https://realpython.com/python-concurrency)
