@@ -4,7 +4,7 @@ layout: post
 date: 2024-07-14
 tags: python asyncio threading multiprocessing concorrência paralelismo
 description: resumo sobre concorrência e paralelismo em Python
-published: true
+published: false
 ---
 
 O objetivo deste texto é dar um resumo direto ao ponto dos **conceitos básicos necessários para entender sobre concorrência a paralelismo na linguagem Python**. Recomendo ter uma base mínima sobre o assunto ou aliar esse texto com estudo em outras fontes. Todas as referências estão ao final do texto. 
