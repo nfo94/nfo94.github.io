@@ -86,6 +86,11 @@ Quando falamos de concorrência es
 
 ## <a name="6"></a>O que é paralelismo?
 
+Diagrama para ilustrar:
+
+<p align="center">
+<img src="./concorrencia-e-paralelismo-em-python-imgs/paralelismo.png"/>
+</p>
 
 ## <a name="7"></a>A biblioteca asyncio
 
