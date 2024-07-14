@@ -3,6 +3,7 @@ title: "Concorrência e paralelismo em Python"
 layout: post
 date: 2024-07-14
 tags: python asyncio threading multiprocessing concorrência paralelismo
+description: resumo sobre concorrência e paralelismo em Python
 published: false
 ---
 
@@ -73,35 +74,54 @@ A ideia do GIL é prevenir _race conditions_, que podem surgir quando mais de um
 Na imagem acima duas threads estão tentando incrementar uma reference count simultaneamente, e aí ao invés da contagem dar 2, já que as duas estão incrementando 1, o resultado final dá 1 (cada thread é uma coluna).
 
 ## <a name="5"></a>O que é concorrência?
-Concorrência em computação acontece quando **lida-se com mais de uma task, sem necessariamente estar lidando com elas exatamente ao mesmo tempo**. Uma frase conhecida do [Rob Pyke](https://en.wikipedia.org/wiki/Rob_Pike) sobre o assunto:
+Concorrência em computação acontece quando **lida-se com mais de uma tarefas, sem necessariamente estar executando essas duas tarefas exatamente ao mesmo tempo**. Uma frase conhecida do [Rob Pyke](https://en.wikipedia.org/wiki/Rob_Pike) sobre o assunto:
 
 > Concorrência significa **lidar** com muitas coisas ao mesmo tempo. Paralelismo é **fazer** muitas coisas ao mesmo tempo.
 
-Quando falamos de concorrência es
+Pense nessa situação hipotética: se você for fazer dois bolos, pode começar pré-aquecendo o forno e, enquanto isso, prepara a massa do primeiro bolo. Assim que o forno estiver na temperatura correta você já pode colocar a massa do primeiro bolo no forno e, enquanto aguarda o bolo crescer no forno, já pode preparar a massa do segundo bolo. A ideia de concorrência é basicamente essa, você não precisa ficar ocioso, travado, parado, enquanto aguarda uma tarefa completar, você pode fazer um _switch_ e trocar de tarefa.
+
+Nesse contexto, temos dois tipos de multitasking:
+
+- **Cooperative multitasking**: nesse modelo explicitamos no código os pontos onde se pode fazer o _switch_ de tarefas. No Python isso é alcançado com o uso de um event loop, um design pattern comum, usando apenas uma thread e um core de CPU, usando, por exemplo, o `asyncio` com `async` e `await`
+- **Preemptive multitasking**: nesse modelo deixamos o sistema operacional lidar com o _switch_. No Python isso é alcançado com mais de uma thread e um core de CPU usando, por exemplo, a lib `threading`
+
+A imagem abaixo ajuda a sumarizar concorrência em Python:
 
 <p align="center">
 <img src="./concorrencia-e-paralelismo-em-python-imgs/concorrencia.png"/>
 </p>
 
-
 ## <a name="6"></a>O que é paralelismo?
+**Paralelismo significa que mais de uma task está sendo executada ao mesmo tempo**. Em outras palavras, paralelismo implica concorrência (lidar com mais de uma task), mas concorrência não implica paralelismo (tasks não estão necessariamente sendo executadas em paralelo, ao mesmo tempo). Para que paralelismo seja possível precisamos de mais de um core de CPU. 
 
-Diagrama para ilustrar:
+No Python paralelismo é alcançado, por exemplo, com a lib `multiprocessing`, onde teremos mais de um processo Python, cada um com seu GIL. A imagem ajuda a ilustrar paralelismo em Python:
 
 <p align="center">
 <img src="./concorrencia-e-paralelismo-em-python-imgs/paralelismo.png"/>
 </p>
 
 ## <a name="7"></a>A biblioteca asyncio
+Existem formas diferentes de se atingir concorrência e paralelismo em Python e podemos utilizar uma ou mais bibliotecas para otimizar nosso código, a depender do tipo de operação que estamos lidando, I/O bound ou CPU bound.
+
+O [`asyncio`](https://docs.python.org/pt-br/3/library/asyncio.html) é uma lib para atingir concorrência usando o `async` e `await`. Pela documentação:
+
+> O asyncio é usado como uma base para várias estruturas assíncronas do Python que fornecem rede e servidores web de alto desempenho, bibliotecas de conexão de banco de dados, filas de tarefas distribuídas etc.
+
+CONTINUAÇÃO
 
 ## <a name="8"></a>A biblioteca threading
 
+[`threading`](https://docs.python.org/pt-br/3/library/threading.html)
+
 ## <a name="9"></a>A biblioteca multiprocessing
- 
+
+[`multiprocessing`](https://docs.python.org/pt-br/3/library/multiprocessing.html)
 
 ---
 _Fontes_:
 
 FOWLER, Matthew. [Python Concurrency with asyncio](https://www.amazon.com.br/Python-Concurrency-asyncio-English-Matthew-ebook/dp/B09S4NBW2X/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.hrCR3O_nnpP3z502Q_U-90OBMrmIMAXl3zIBDIRAa6ZtVFLXDmHRGneAJVIt0nU80CejmcvLhZvK60Jk1LpM3sO1Mqe9MtF1AXr4H3gRLKprHITsENvjoIvmTmfRkV0hF7peJqUAB8EJUejNW-0jVMq4kuzVS_6ku0Q-0Ge1M1V1O147m3K1c1gU8BQwioqpdimWwJBO7TUvxtDEIRjC9ASkmKNr46PqT5JL2jpcK-jbEw-_nYSxPk0lHmW_XBMngMORwj2znV96dfoUXACcfQJ04lRRbHDJmYhkyZNaN4k.IURAGkadqEEUNyjwE5NoLWNseUJm58Vopo-2CV2n5U4&qid=1720896914&sr=8-1). Manning Publications, 2022.
+
 MACHADO, Francis Berenger; MAIA, Luiz Paulo. [Arquitetura de Sistemas Operacionais: Incluindo Exercícios com o Simulador SOSIM e Questões do ENADE](https://www.amazon.com.br/Arquitetura-Sistemas-Operacionais-Incluindo-Exerc%C3%ADcios/dp/8521622104/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=150WW8OAI7BK3&dib=eyJ2IjoiMSJ9.A1ZhX8ImePrgue4fqDmOFhTfVbkIf5kIlU2jq5kd4laG4KvRRBXQekMR1rhx34OdkcpofR8kV8Ln0SjtzbN9on9rfe1wq8VNaqPBEYyuFuE.byPfWCKB9260AyrDAXjLab022xEJbcexS5jc_qZgex0&dib_tag=se&keywords=Arquitetura+de+Sistemas+Operacionais%3A+Incluindo+Exerc%C3%ADcios+com+o+Simulador+SOSIM+e+Quest%C3%B5es+do+ENADE&qid=1720896386&sprefix=arquitetura+de+sistemas+operacionais+incluindo+exerc%C3%ADcios+com+o+simulador+sosim+e+quest%C3%B5es+do+enade%2Caps%2C137&sr=8-1). Rio de Janeiro: LTC, 2013.
+
 [Thread (computing) by Wikipedia](https://en.wikipedia.org/wiki/Thread_(computing))
