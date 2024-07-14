@@ -101,17 +101,14 @@ No Python paralelismo é alcançado, por exemplo, com a lib `multiprocessing`, o
 </p>
 
 ## <a name="7"></a>A biblioteca asyncio
-Existem formas diferentes de se atingir concorrência e paralelismo em Python e podemos utilizar uma ou mais bibliotecas para otimizar nosso código, a depender do tipo de operação que estamos lidando, I/O bound ou CPU bound.
-
-O [`asyncio`](https://docs.python.org/pt-br/3/library/asyncio.html) é uma lib para atingir concorrência usando o `async` e `await`. Pela documentação:
+Existem formas diferentes de se atingir concorrência e paralelismo em Python e podemos utilizar algumas bibliotecas para otimizar nosso código, a depender do tipo de operação que estamos lidando, I/O bound ou CPU bound. O [`asyncio`](https://docs.python.org/pt-br/3/library/asyncio.html) é uma lib para atingir concorrência usando o `async` e `await`. Pela documentação:
 
 > O asyncio é usado como uma base para várias estruturas assíncronas do Python que fornecem rede e servidores web de alto desempenho, bibliotecas de conexão de banco de dados, filas de tarefas distribuídas etc.
 
-CONTINUAÇÃO
+Como você pode imaginar, essa lib é adequada para otimizar tarefas I/O bound, onde temos tempo de espera de network, escrita em disco, etc. Numa operação CPU bound não há espera, dependemos apenas da velocidade de cálculo da CPU.
 
 ## <a name="8"></a>A biblioteca threading
-
-[`threading`](https://docs.python.org/pt-br/3/library/threading.html)
+A lib [`threading`](https://docs.python.org/pt-br/3/library/threading.html) do Python 
 
 ## <a name="9"></a>A biblioteca multiprocessing
 
