@@ -1,4 +1,5 @@
 ---
-title: Blog
+title: Tech blog
+description: blog sobre computação e afins de Natália Oliveira, analista e desenvolvedora de software.
 ---
-Olá! Neste blog posto artigos sobre computação em geral. 
+Olá! Me chamo Natália Oliveira e neste blog posto artigos sobre desenvolvimento de software e computação em geral. 
