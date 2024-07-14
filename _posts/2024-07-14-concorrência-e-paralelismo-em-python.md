@@ -30,9 +30,8 @@ Em computação um **processo é uma instância de uma aplicação rodando**. Se
 
 A imagem a seguir foi retirada do [livro do Francis Machado e do Luis Maia](https://www.amazon.com.br/Arquitetura-Sistemas-Operacionais-Incluindo-Exerc%C3%ADcios/dp/8521622104/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=150WW8OAI7BK3&dib=eyJ2IjoiMSJ9.A1ZhX8ImePrgue4fqDmOFhTfVbkIf5kIlU2jq5kd4laG4KvRRBXQekMR1rhx34OdkcpofR8kV8Ln0SjtzbN9on9rfe1wq8VNaqPBEYyuFuE.byPfWCKB9260AyrDAXjLab022xEJbcexS5jc_qZgex0&dib_tag=se&keywords=Arquitetura+de+Sistemas+Operacionais%3A+Incluindo+Exerc%C3%ADcios+com+o+Simulador+SOSIM+e+Quest%C3%B5es+do+ENADE&qid=1720896386&sprefix=arquitetura+de+sistemas+operacionais+incluindo+exerc%C3%ADcios+com+o+simulador+sosim+e+quest%C3%B5es+do+enade%2Caps%2C137&sr=8-1):
 
-<p align="center">
-<img src="concorrencia-e-paralelismo-em-python-imgs/processo.png"/>
-</p>
+
+![concorrencia](concorrencia-e-paralelismo-em-python-imgs/processo.png)
 
 Essas informações são necessárias para a execução de um programa.
 
