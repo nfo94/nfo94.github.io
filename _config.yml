@@ -2,3 +2,6 @@ theme: minima
 description: Natália Oliveira's tech blog about software development and computer science for portuguese speakers.
 header_pages:
   - about.md
+
+minima:
+  date_format: "%d-%b-%Y"
