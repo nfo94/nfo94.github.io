@@ -1,7 +1,8 @@
-theme: minima
-description: Natália Oliveira's tech blog about software development and computer science for portuguese speakers.
+title: Natália Oliveira
 author:
   name: Natália Oliveira
   email: nataliaferreiraoliveira1994@gmail.com
+theme: minima
+description: Natália Oliveira's tech blog about software development and computer science for portuguese speakers.
 header_pages:
   - about.md
