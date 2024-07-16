@@ -3,8 +3,8 @@
 
   <div class="wrapper">
 
-    <div class="footer-col-wrapper" style="display: flex; justify-content: center;">
-      <div class="footer-col">
+    <div class="footer-col-wrapper" style="display: flex; flex-direction: column;">
+      <div class="footer-col" style="display: flex; justify-content: center;">
       {%- if site.author %}
         <ul class="contact-list">
           {% if site.author.email -%}
@@ -14,8 +14,8 @@
       {%- endif %}
       </div>
 
-      <div class="footer-col">
-        <p style="text-align: right;">{{ site.description | escape }}</p>
+      <div class="footer-col" style="display: flex; justify-content: center;">
+        <p style="text-align: center;">{{ site.description | escape }}</p>
       </div>
     </div>
 
