@@ -4,7 +4,7 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
-      <div class="footer-col">
+      <div class="footer-col" style="display: flex; justify-content: center;">
       {%- if site.author %}
         <ul class="contact-list">
           {% if site.author.email -%}
@@ -13,12 +13,13 @@
         </ul>
       {%- endif %}
       </div>
+
       <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
+        <p style="text-align: center;">{{ site.description | escape }}</p>
       </div>
     </div>
 
-    <div class="social-links">
+    <div class="social-links" style="display: flex; justify-content: center;">
       {%- include social.html -%}
     </div>
 
