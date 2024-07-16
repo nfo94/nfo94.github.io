@@ -1,7 +1,14 @@
 theme: minima
 description: Um blog sobre desenvolvimento de software e ciência da computação em geral.
+author:
+  name: Natália Oliveira
+  email: nataliaferreiraoliveira1994@gmail.com
 header_pages:
   - about.md
 
 minima:
   date_format: "%d-%b-%Y"
+
+  social_links:
+   - { platform: github,         user_url: "https://github.com/nfo94" }
+   - { platform: linkedin,       user_url: "https://www.linkedin.com/in/nataliaferreiraoliveira/" }
