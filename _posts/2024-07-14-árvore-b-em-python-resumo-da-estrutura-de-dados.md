@@ -22,7 +22,7 @@ Uma árvore em ciência da computação é uma estrutura de dados não linear on
 dispostos de forma hierárquica como, por exemplo, numa árvore genealógica:
 
 <p align="center">
-<img src="../../../assets/images/abeprdedd/exemplo-de-árvore.svg" alt="exemplo de árvore" />
+<img src="../../../assets/images/abeprdedd/exemplo-de-arvore.png" alt="exemplo de árvore" />
 <figcaption>Exemplo de árvore do Wikipedia. <a href="https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=BR&uselang=pt-br&wmf_campaign=C11_Waystogive&wmf_medium=Waystogive&wmf_source=Waystogive">Doe para o Wikipedia</a>
 </figcaption>
 </p>
@@ -32,7 +32,7 @@ filhos ou não. Podemos ter nós internos, ou seja, que têm filhos, ou nós ext
 tem filhos.
 
 <p align="center">
-<img src="../../../assets/images/abeprdedd/componentes-de-árvores.svg" alt="exemplo de árvore" />
+<img src="../../../assets/images/abeprdedd/componentes-de-árvores.png" alt="componentes de uma árvore" />
 <figcaption>Componentes de uma árvore do livro da Loiane Groner. <a href="https://www.amazon.com.br/Estruturas-Dados-Algoritmos-Com-Javascript/dp/8575226932">Compre o livro aqui</a>
 </figcaption>
 </p>
