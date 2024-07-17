@@ -4,7 +4,7 @@ layout: post
 date: 2024-07-14
 tags: python b-tree árvore-b estruturas-de-dados
 description: resumo sobre estruturas de dados árvore b, com exemplos na linguagem Python
-published: true
+published: false
 ---
 
 Este artigo aborda de forma prática a estrutura de dados árvore b (b tree) com exemplos na
