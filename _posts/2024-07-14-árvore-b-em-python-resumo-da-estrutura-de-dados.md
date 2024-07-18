@@ -1,25 +1,24 @@
 ---
-title: "Árvore B (b tree) em Python: resumo da estrutura de dados"
+title: "Árvore B (b-tree) em Python: resumo da estrutura de dados"
 layout: post
 date: 2024-07-14
 tags: python b-tree árvore-b estruturas-de-dados
 description: resumo sobre estruturas de dados árvore b, com exemplos na linguagem Python
-published: false
+published: true
 ---
 
-Este artigo aborda de forma prática a estrutura de dados árvore b (b tree) com exemplos na
-linguagem Python. Precisei estudar a estrutura para entender melhor o livro [Database Internals do
-Alex Petrov](https://www.amazon.com.br/Database-Internals-Distributed-Systems-English-ebook/dp/B07XW76VHZ/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.iKPDI1kEgUXPUM7fVhNzHBRKU60ECB7yYS_arvp13YVO7ljfQVz92YOwtP4pFGLjpJbscRV8cFm0yoGYmEOCIqnEt6CmalQy_ypBtFNZU5Dw6X1pyFV3_tzMiUcu6GTcVa81G6l3oVjBDyS2dq1ET5cx_UClN74eYlBGSjZ03pVUOddEraJ6htVhRUF-rAXCjs7EKvV991dWxAZLXzFteq5XGh-SBwTy6esZHD0wB6IrjeF53KXPafpSiDHes3esUf8HEbOewYZGdK2p8NS0LcoSSdUgvGNBTuUONERr9hg.5nzu0Qf-Mlcxt9QL0h8nwEGoJsb83kY0Fk3EmYcvtko&qid=1721200648&sr=8-1#customerReviews). Abordarei aqui:
+Este artigo aborda de forma prática a estrutura de dados árvore b (b-tree) com exemplos na
+linguagem Python. Abordarei aqui:
 
 - [O que é uma árvore em computação?](#1)
-- [O que é uma árvore b (b tree)?](#2)
+- [O que é uma árvore b (b-tree)?](#2)
 - [Onde a estrutura de dados árvore b é utilizada na prática?](#3)
 - [Operações na árvore b](#4)
 
 ## <a name="1"></a>O que é uma árvore em computação?
 
-Uma árvore em ciência da computação é uma estrutura de dados não linear onde os dados estão
-dispostos de forma hierárquica como, por exemplo, numa árvore genealógica:
+Uma árvore em ciência da computação é \*\*uma estrutura de dados não linear onde os dados estão
+dispostos de forma hierárquica\*\* como, por exemplo, numa árvore genealógica:
 
 <p align="center">
 <img src="../../../assets/images/abeprdedd/exemplo-de-arvore.png" alt="exemplo de árvore" />
@@ -27,17 +26,15 @@ dispostos de forma hierárquica como, por exemplo, numa árvore genealógica:
 </figcaption>
 </p>
 
-Uma árvore tem nodos/nós (nodes) e todo nó tem um pai, exceto a raíz (root). Cada nó pode ter
-filhos ou não. Podemos ter nós internos, ou seja, que têm filhos, ou nós externos (leaf), que não
-tem filhos.
+Uma árvore tem **nodos/nós (nodes)** e todo nó tem um pai, exceto a **raíz (root)**. Cada nó pode
+ter filhos ou não. Podemos ter **nós internos**, ou seja, que têm filhos, ou **nós externos (leaf)**, que não tem filhos. Chamamos de **subárvore** um nó e seus ancestrais.
 
 <p align="center">
 <img src="../../../assets/images/abeprdedd/componentes-de-árvores.png" alt="componentes de uma árvore" />
-<figcaption>Componentes de uma árvore do livro da Loiane Groner. <a href="https://www.amazon.com.br/Estruturas-Dados-Algoritmos-Com-Javascript/dp/8575226932">Compre o livro aqui</a>
-</figcaption>
+<figcaption>Componentes de uma árvore do livro da Loiane Groner.</figcaption>
 </p>
 
-## <a name="2"></a>O que é uma árvore b (b tree)?
+## <a name="2"></a>O que é uma árvore b (b-tree)?
 
 O computador pode ler um bloco de informação do disco rígido conhecido como _página_ (page) e
 guardar essa informação na memória, e assim podemos, por exemplo, começar a ver um "pedaço" de um
@@ -45,14 +42,33 @@ vídeo que ainda está sendo baixado. Ou se você for uma pessoa mais velha, pod
 era necessário usar mais de um CD para instalar um jogo no PC, o famoso "Insira o disco 2 de 3".
 
 A estrutura árvore b foi projetada por Rudolf Bayer e Edward levando em conta o custo de recuperação
-de novos blocos de dados. É um tipo de árvore auto-balanceada que mantém dados ordenados e permite
-pesquisa, acesso sequencial, inserção e exclusão em O(log n) (complexidade logaritmica):
+de novos blocos de dados. É um tipo de **árvore auto-balanceada** que mantém dados ordenados e
+permite busca, inserção e exclusão em O(log n) (complexidade logaritmica):
 
 <p align="center">
 <img src="../../../assets/images/abeprdedd/complexidade-computacional.svg" alt="complexidade computacional" />
 <figcaption>Complexidade computacional. <a href="https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=BR&uselang=pt-br&wmf_campaign=C11_Waystogive&wmf_medium=Waystogive&wmf_source=Waystogive">Doe para o Wikipedia</a> 
 </figcaption>
 </p>
+
+Dizer que uma árvore é auto-balanceada significa que ela reforça cada nó a ter um mínimo número de
+chaves, e que ela evita que um nó tenha muito mais níveis do que o resto. Abaixo um exemplo de
+árvore não balanceada:
+
+<p align="center">
+<img src="../../../assets/images/abeprdedd/árvore-não-balanceada.png" alt="árvore não balanceada" />
+<figcaption>Exemplo de árvore não balanceada do livro da Loiane Groner.</figcaption>
+</p>
+
+Uma b-tree permite aos nós internos terem mais de uma chave e mais de uma branch (ramo). Ou seja, a b-tree nos permite guardar vários pedaços de dados em um único nó. Exemplo de b-tree:
+
+<p align="center">
+<img src="../../../assets/images/abeprdedd/exemplo-de-b-tree.png" alt="exemplo de b-tree" />
+<figcaption>Exemplo de árvore b do livro do Jeremy Kubica.</figcaption>
+</p>
+
+Definimos o tamanho do nó da árvore B com um parâmetro de tamanho _k_, e todos os nós guardam entre
+k e 2k de chaves ordenadas, enquanto a raíz pode guardar entre 0 e 2k.
 
 ## <a name="3"></a>Onde a estrutura de dados árvore b é utilizada?
 
@@ -71,5 +87,3 @@ Complexo e Eficaz Usando a Mais Recente ECMAScript](https://www.amazon.com.br/Es
 [Árvore B por Wikipedia](https://pt.wikipedia.org/wiki/%C3%81rvore_B)
 
 [Introduction of B-Tree por Geeks for Geeks](https://www.geeksforgeeks.org/introduction-of-b-tree-2/)
-
-[Árvore por Wikipedia](<https://pt.wikipedia.org/wiki/%C3%81rvore_(estrutura_de_dados)>)
