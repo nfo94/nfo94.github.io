@@ -4,9 +4,8 @@ title: Sobre
 permalink: /about/
 ---
 
-Sou desenvolvedora de software formada em análise e desenvolvimento de sistemas pela Unifacs.
-Estudei direito na UNEB antes de migrar de área e estou trabalhando com software já faz alguns
-anos, com experiência fullstack.
+Sou desenvolvedora de software há pouco mais de 4 anos, formada em Análise e
+Desenvolvimento de Sistemas pela Unifacs. Tenho experiência fullstack e atualmente
+estou fazendo uma pós-graduação em Engenharia de Dados no Instituto Infnet.
 
-Os artigos que escrevo aqui são criados como parte de meus estudos e devem ser tratados como apenas
-parte do seu estudo também. Bom proveito!
+Os artigos que escrevo aqui são parte de meus estudos e reflexões. Bom proveito!
