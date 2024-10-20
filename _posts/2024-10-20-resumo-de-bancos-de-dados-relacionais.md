@@ -1,5 +1,5 @@
 ---
-title: "Resumo de conceitos de bancos relacionais"
+title: "Resumo de conceitos de bancos de dados relacionais"
 layout: post
 date: 2024-10-20
 tags: bancos relacionais rdbms transações ACID two-phase commit schema sharding
