@@ -86,7 +86,7 @@ esses problemas que surgem no cenário de um sistema distribuído.
 
 Você pode representar seus objetos de domínio em um modelo relacional, onde temos
 entidades e relacionamentos. Geralmente nos referimos ao modelo relacional como
-**schema on write**, em contraste com o **schema on read** de bancos NoSQL, que
+**schema on write**, em contraste com o schema on read de bancos NoSQL, que
 tendem a ser mais flexíveis. _Schema on write_ é a característica de ter um
 schema mais rígido que é reforçado na hora da escrita no banco:
 
