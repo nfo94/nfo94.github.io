@@ -8,4 +8,4 @@ de artigos. Te convido a dar uma olhada no novo site: https://nfo94.github.io/
 [EN]
 I tend to write about software and computer science in https://dev.to/nfo94 but after some issues
 with the platform I decided to create a simple blog to share my studies as articles. You're invited
-to take a look at new site: https://nfo94.github.io/
+to take a look at the new site: https://nfo94.github.io/
