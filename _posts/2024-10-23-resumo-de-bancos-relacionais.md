@@ -6,7 +6,7 @@ tags: bancos relacionais, rdbms, transações, ACID, two-phase commit, schema,
 sharding
 description: resumo sobre conceitos de bancos relacionais, como transações 
 (transactions), ACID, two-phase commit, schema, sharding
-published: false
+published: true
 ---
 
 Nesse texto irei abordar de forma resumida alguns conceitos (não é uma lista
