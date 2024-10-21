@@ -65,6 +65,12 @@ de commit**, as quais bloqueiam os recursos associados. Com esse _lock_ (bloquei
 de recursos já podemos imaginar que algumas operações podem levar muito tempo para
 terminar.
 
+Abaixo uma ilustração do livro Designing Data Intensive Application:
+
+<p align="center">
+<img alt="two-phase-commit" src="../../../assets/images/2/two-phase-commit.png"/>
+</p>
+
 O 2PC espera um node responder, mesmo que o node já tenha morrido e, para não ter
 um loop rodando para sempre, esperando o node ficar vivo, podemos configurar um
 _timeout_. Ainda assim é possivel que ocorra um loop infinito pois um node pode responder
