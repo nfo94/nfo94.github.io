@@ -74,9 +74,9 @@ Abaixo uma ilustração do livro Designing Data Intensive Application:
 O 2PC espera um node responder, mesmo que o node já tenha morrido e, para não ter
 um loop rodando para sempre, esperando o node ficar vivo, podemos configurar um
 _timeout_. Ainda assim é possivel que ocorra um loop infinito pois um node pode responder
-OK para commitar a transação, esperar o gerenciador (\_coordenador*) de transações e,
+OK para commitar a transação, esperar o gerenciador (_coordenador_) de transações e,
 se o coordenador está down, o node vai esperar para sempre. Para lidar com esse
-tipo de problema no mundo relacional temos a ideia de *compensation\*, onde a
+tipo de problema no mundo relacional temos a ideia de \*compensation\*, onde a
 transação é imediatamente comitada, e no caso de um erro ser reportado, uma nova
 operação é feita para retificar o estado.
 
