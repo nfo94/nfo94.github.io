@@ -32,8 +32,9 @@ de estado que possui as propriedades ACID**.
 <img alt="acid" src="../../../assets/images/2/acid.png"/>
 </p>
 
-ACID é um acrônimo para atômico, consistente, isolado e durável. Se um banco
-possui transações ACID podemos dizer que esse banco é _ACID compliant_.
+ACID é um acrônimo para atômico, consistente, isolado e durável. Você pode encontrar
+a expressão _ACID compliant_ para se referir a um banco que dê suporte a essas
+propriedades.
 
 - Atômico: significa "tudo ou nada" em uma transação. Se uma transação é executada,
   todas as operações que ela contém precisam ser um sucesso, não há falha parcial.
