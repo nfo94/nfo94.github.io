@@ -22,7 +22,7 @@ Banco de dados relacionais suportam **transações (_transactions_)**, que são
 como uma **unidade de operação completa** num banco relacional, que executa
 primeiro "virtualmente" e **permite que a operação seja desfeita (rollback) se
 qualquer modificação tenha dado errado**. No caso de dar tudo certo com todos os
-passos da transação, ela **pode ser comitada (_commited_) com segurança no banco**.
+passos da transação, ela pode ser **comitada (_commited_) com segurança no banco**.
 Em outras palavras, uma **transação pode ser compreendida como uma transformação
 de estado que possui as propriedades ACID**.
 
@@ -36,17 +36,17 @@ ACID é um acrônimo para atômico, consistente, isolado e durável. Você pode 
 a expressão _ACID compliant_ para se referir a um banco que dê suporte a essas
 propriedades.
 
-- Atômico: significa "tudo ou nada" em uma transação. Se uma transação é executada,
+- **Atômico (atomicity)**: significa "tudo ou nada" em uma transação. Se uma transação é executada,
   todas as operações que ela contém precisam ser um sucesso, não há falha parcial.
   Ou todas as operações são um sucesso ou a transação falha (pense em OR exclusivo
   aqui).
-- Consitente: uma transação bem sucedida leva os dados de um estado consistente
+- **Consitente (consistency)**: uma transação bem sucedida leva os dados de um estado consistente
   para outro, sem a possibilidade de usuários verem dados diferentes que não
   fazem sentido juntos.
-- Isolado: as transações que forem executadas concorrentemente não afetarão umas
+- **Isolado (isolation)**: as transações que forem executadas concorrentemente não afetarão umas
   as outras. Ou seja, se uma transação tentar modificar os mesmos dados que outra,
   ela terá que esperar.
-- Durável: uma transação bem sucedida não será perdida, por exemplo, caso ocorra
+- **Durável (durable)**: uma transação bem sucedida não será perdida, por exemplo, caso ocorra
   algum desastre com o data center que contém o banco.
 
 ## <a name="3"></a>Two-phase commit (2PC)
