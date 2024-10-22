@@ -37,9 +37,8 @@ a expressão _ACID compliant_ para se referir a um banco que dê suporte a essas
 propriedades.
 
 - **Atômico (atomicity)**: significa "tudo ou nada" em uma transação. Se uma transação é executada,
-  todas as operações que ela contém precisam ser um sucesso, não há falha parcial.
-  Ou todas as operações são um sucesso ou a transação falha (pense em OR exclusivo
-  aqui).
+  todas as operações que ela contém precisam ser um sucesso. Ou todas as operações
+  são um sucesso ou a transação falha (pense em OR exclusivo aqui).
 - **Consitente (consistency)**: uma transação bem sucedida leva os dados de um estado consistente
   para outro, sem a possibilidade de usuários verem dados diferentes que não
   fazem sentido juntos.
@@ -55,8 +54,8 @@ Lidar com transações é um pouco mais difícil quando temos grandes cargas, co
 vários usuários realizando muitas operações no banco, e quando vamos escalar
 horizontalmente (adicionando mais máquinas e agora lidando com um sistema
 distribuído) para lidar com essa carga passamos a lidar também com transações
-distribuídas (_distributed transaction_). Com isso, para manter o banco com
-propriedades ACID precisamos ter algum gerenciador de transações para conseguir
+distribuídas (_distributed transactions_). Com isso, para manter o banco com
+propriedades ACID, precisamos ter algum gerenciador de transações para conseguir
 orquestrar essas transações em vários nodes diferentes.
 
 É aqui que entra a ideia de **two-phase commit, que é um algortimo pensado para
@@ -74,12 +73,12 @@ Abaixo uma ilustração do livro Designing Data Intensive Application:
 
 O 2PC espera um node responder, mesmo que o node já tenha morrido e, para não ter
 um loop rodando para sempre, esperando o node ficar vivo, podemos configurar um
-_timeout_. Ainda assim é possivel que ocorra um loop infinito pois um node pode responder
-OK para commitar a transação, esperar o gerenciador (_coordenador_) de transações e,
-se o coordenador está down, o node vai esperar para sempre. Para lidar com esse
-tipo de problema no mundo relacional temos a ideia de \*compensation\*, onde a
-transação é imediatamente comitada, e no caso de um erro ser reportado, uma nova
-operação é feita para retificar o estado.
+_timeout_. Ainda assim é possivel que ocorra um loop infinito pois um node pode
+responder OK para commitar a transação, esperar o gerenciador (_coordenador_) de
+transações e, se o coordenador está down, o node vai esperar para sempre. Para
+lidar com esse tipo de problema no mundo relacional temos a ideia de \*compensation\*,
+onde a transação é imediatamente comitada, e no caso de um erro ser reportado, uma
+nova operação é feita para retificar o estado.
 
 Alguns problemas que o 2PC introduz:
 
@@ -94,8 +93,8 @@ esses problemas que surgem no cenário de um sistema distribuído.
 Você pode representar seus objetos de domínio em um modelo relacional, onde temos
 entidades e relacionamentos. Geralmente nos referimos ao modelo relacional como
 **schema on write**, em contraste com o schema on read de bancos NoSQL, que
-tendem a ser mais flexíveis. _Schema on write_ é a característica de ter um
-schema mais rígido que é reforçado na hora da escrita no banco:
+são mais flexíveis. _Schema on write_ é a característica de ter um schema mais
+rígido que é reforçado na hora da escrita no banco:
 
 > As bases de dados relacionais assumem frequentemente que todos os dados na base
 > de dados estão em conformidade com um esquema: embora este esquema possa ser
@@ -113,8 +112,8 @@ do cluster. É como se dividíssemos porções dos dados horizontalmente, hosped
 separadamente em mais de um node.
 
 É necessário pensar muito bem qual será a lógica para dividir os dados. De nada
-adianta, por exemplo, dividir dados de forma que as partes mais acessadas continuem
-juntas, já que não iremos "desafogar" (escalar) o banco de fato.
+adianta, por exemplo, dividir dados de forma que as partes mais acessadas (_hot
+spots_) continuem juntas, já que não iremos "desafogar", escalar, o banco de fato.
 
 Existem algumas estratégias bem conhecidas de sharding:
 
@@ -122,7 +121,7 @@ Existem algumas estratégias bem conhecidas de sharding:
 - Por chave (_key-based_)
 
 Recomendo fortemente a leitura do livro Designing Data Intensive Applications para
-completar esse texto:
+navegar em assuntos complementares a esse texto:
 
 <p align="center">
 <img alt="acid" src="../../../assets/images/2/designing-data-intensive-applications.png"/>
