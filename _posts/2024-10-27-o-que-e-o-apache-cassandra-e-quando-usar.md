@@ -108,7 +108,8 @@ O Cassandra pode ser um bom fit para o seu projeto caso você precise lidar com:
 - **Nuvem híbrida e deployment multicloud**: você precisa fazer deploy não só em múltiplos
   data centers, mas também em provedores de cloud diferentes. Exemplo: você precisa
   da maior disponibilidade possível para um aplicativo _mission critical_ e por
-  isso utiliza mais de um proveador (se um "implodir" ainda tem o outro)
+  isso utiliza mais de um proveador (se houver problemas com um provedor ainda
+  haverá o outro)
 
 ---
 
