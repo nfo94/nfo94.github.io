@@ -14,7 +14,7 @@ exaustiva!) que envolvem bancos de dados relacionais:
 - [ACID](#2)
 - [Two-phase commit (2PC)](#3)
 - [Schema](#4)
-- [Sharding](#4)
+- [Sharding](#5)
 
 ## <a name="1"></a>Transações (_transactions_)?
 
