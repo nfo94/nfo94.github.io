@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sobre
-permalink: /about/
+permalink: /sobre/
 ---
 
 Sou desenvolvedora de software há pouco mais de 4 anos, formada em Análise e
