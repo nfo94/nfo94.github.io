@@ -5,7 +5,6 @@ author:
   email: nataliaferreiraoliveira1994@gmail.com
 header_pages:
   - about.md
-  - EN.md
 
 minima:
   date_format: "%d/%m/%Y"
