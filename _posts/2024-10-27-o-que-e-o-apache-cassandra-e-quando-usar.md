@@ -20,7 +20,8 @@ bastante utilizado para entender sobre a tecnologia, e um pouco do já clássico
 
 O Cassandra é um **banco de dados NoSQL de código aberto, decentralizado, com
 escalabilidade elástica, altamente disponível, tolerante a falhas e orientado
-a linhas (_row-oriented_)**. Vamos discutir cada um desses pontos.
+a linhas particionadas, onde os dados são armazenados em tabelas hash multidimensionais
+esparsas**. Vamos discutir esses pontos.
 
 Bancos NoSQL (_not only SQL_) são bancos que não seguem os padrões de bancos
 relacionais, resolvendo problemas um pouco diferentes (em breve farei um texto
@@ -79,7 +80,7 @@ Pela definição de Carpenter e Hewitt:
 > vários armazenamentos de dados. (CARPENTER and HEWITT, 2022)
 
 Ou seja, quando for ter uma "imagem mental" dos dados no Cassandra faz sentido
-pensar numa tabela de banco relacional, dadas as devidas diferenças: cada linha
+pensar numa linha de banco relacional, dadas as devidas diferenças: cada linha
 pode ter uma ou mais colunas e não precisa ter as mesmas colunas que outra linha,
 além de ter uma chave de partição única.
 
