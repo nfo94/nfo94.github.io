@@ -7,6 +7,10 @@ description: como rodar o apache cassandra e jupyter notebooks com spark localme
 published: true
 ---
 
+<p align="center">
+<img alt="jupyter-notebook" src="../../../assets/images/4/jupyter-notebook.png"/>
+</p>
+
 Hoje vou mostrar como configurar um projeto para análise de dados com o Cassandra e o
 Jupyter Notebook com Pyspark, usando tudo no Docker. Vamos abordar:
 
