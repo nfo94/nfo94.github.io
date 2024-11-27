@@ -30,7 +30,7 @@ cassandra-jupyter-spark-python
 └── pyproject.toml
 ```
 
-E você pode encontrar um projeto similiar a esse, completo, com análise de dados (porcamente
+Você pode encontrar um projeto similiar a esse, completo, com análise de dados (porcamente
 feita por mim) no [GitHub](https://github.com/nfo94/infraestrutura-cassandra-pd).
 
 ## <a name="1"></a>Configurando o Apache Cassandra com Docker
