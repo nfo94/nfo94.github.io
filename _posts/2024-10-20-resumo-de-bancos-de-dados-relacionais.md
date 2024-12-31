@@ -124,7 +124,7 @@ Recomendo fortemente a leitura do livro Designing Data Intensive Applications pa
 navegar em assuntos complementares a esse texto:
 
 <p align="center">
-<img alt="acid" src="../../../assets/images/2/designing-data-intensive-applications.png"/>
+<img alt="designing data intensive applications" src="../../../assets/images/2/designing-data-intensive-applications.png"/>
 </p>
 ---
 

@@ -49,7 +49,7 @@ que essa edicão seja traduzida para o português.
 
 - [**Link para o livro Designing Data-Intensive Applications**](https://www.amazon.com.br/Designing-Data-Intensive-Applications-Reliable-Maintainable-ebook/dp/B06XPJML5D/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.uKKyaNHuzp5D7DchHIgwHtXJv8tk_RD31Eetcm-YM317qEFGsD6Tq8EXynYuUFgG2U60SDWNVKMMtCkNGeHhauCgDO8KiyDBJAzyg0MdQ6aGORrnUGA7gle55HimQdB3T8YzwQb40LbedZQP54uTEbspTsMH-UnTcrtVoQbhIdU5cvoyTQIrTj_zWpH4xHMdcxEbgbW1ubwle-L7DjEjcBOey9AOAMbyEvm3zcNgMl-fO3MpzZoiiTGurcOwM1KA0BuW4e3Ri9V1IfqQS9dLGi4jEevLKujETxx4WK0vTk9Vpz5zKvZjAyhDw_cOLdgOg2vAvOtaApmfh2CnoEDBFD_mv7zo8XnR9wzdBV7lX8MYBrDPnboDwCIYyaWtFHkR3eg0fjDAPQID-vLAwe9CsMm4ZFzEihannjz_9ujWM5cjzkpuGYBEYSLaLWQNOEPh.imRmUHBJGkV1Btbrug3EDo_o23CRxdYv9YwPmwwS--A&qid=1735228860&sr=8-1)
 
-<p align="center" width="70%">
+<p align="center" width="500">
 <img alt="designin data-intensive applications" src="../../../assets/images/5/ddia.jpeg"/>
 </p>
 
