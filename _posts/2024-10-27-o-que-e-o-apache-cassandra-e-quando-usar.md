@@ -2,7 +2,7 @@
 title: "O que é o Apache Cassandra e quando usar?"
 layout: post
 date: 2024-10-27
-tags: apache cassandra row-oriented nosql open source resumo
+tags: apache cassandra, row-oriented, nosql, open source, resumo
 description: resumo sobre o apache cassandra, o que é e quando usar
 published: true
 ---

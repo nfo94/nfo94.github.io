@@ -2,7 +2,7 @@
 title: "Livros técnicos lidos em 2024"
 layout: post
 date: 2024-12-31
-tags: livros tech designing-data-intensive-applications artificial-intelligence-basics database-internals building-microservices
+tags: livros, tech,designing data-intensive applications, artificial intelligence basics, database internals, building microservices
 description: listando minhas leituras técnicas de 2024
 published: true
 ---

@@ -2,7 +2,7 @@
 title: "Infraestrutura para análise de dados com Jupyter, Cassandra, Pyspark e Docker"
 layout: post
 date: 2024-11-27
-tags: apache cassandra nosql docker pyspark jupyter spark
+tags: apache cassandra, nosql, docker, pyspark, jupyter, spark
 description: como rodar o apache cassandra e jupyter notebooks com spark localmente com Docker, conectando o jupyter no cassandra
 published: true
 ---
