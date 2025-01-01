@@ -49,8 +49,8 @@ que essa edicão seja traduzida para o português.
 
 - [**Link para o livro Designing Data-Intensive Applications**](https://www.amazon.com.br/Designing-Data-Intensive-Applications-Reliable-Maintainable-ebook/dp/B06XPJML5D/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.uKKyaNHuzp5D7DchHIgwHtXJv8tk_RD31Eetcm-YM317qEFGsD6Tq8EXynYuUFgG2U60SDWNVKMMtCkNGeHhauCgDO8KiyDBJAzyg0MdQ6aGORrnUGA7gle55HimQdB3T8YzwQb40LbedZQP54uTEbspTsMH-UnTcrtVoQbhIdU5cvoyTQIrTj_zWpH4xHMdcxEbgbW1ubwle-L7DjEjcBOey9AOAMbyEvm3zcNgMl-fO3MpzZoiiTGurcOwM1KA0BuW4e3Ri9V1IfqQS9dLGi4jEevLKujETxx4WK0vTk9Vpz5zKvZjAyhDw_cOLdgOg2vAvOtaApmfh2CnoEDBFD_mv7zo8XnR9wzdBV7lX8MYBrDPnboDwCIYyaWtFHkR3eg0fjDAPQID-vLAwe9CsMm4ZFzEihannjz_9ujWM5cjzkpuGYBEYSLaLWQNOEPh.imRmUHBJGkV1Btbrug3EDo_o23CRxdYv9YwPmwwS--A&qid=1735228860&sr=8-1)
 
-<p align="center" width="500">
-<img alt="designin data-intensive applications" src="../../../assets/images/5/ddia.jpeg"/>
+<p align="center">
+<img  width="65%" alt="designin data-intensive applications" src="../../../assets/images/5/ddia.jpeg"/>
 </p>
 
 ## <a name="2"></a>Artificial Intelligence Basics
@@ -71,7 +71,7 @@ mão na massa com algo atual, estou vendo bons reviews sobre [Build a Large Lang
 - [**Link para o livro Artificial Intelligence Basics**](https://www.amazon.com.br/Artificial-Intelligence-Basics-Non-Technical-Introduction-ebook/dp/B07VY31R29/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.jt4CqVTrLNenFCBEI6nCEdIJw-P_AqzN8WZDreOP2ipZYiDjG2ds9s_nPg-P47vstmoVP3NrMiG15aBX2P7GEXSjYjxNsi21buM50tGwWBulGMJQJWETWuO0YYMe9M2XzTMJECwvfLRCRRySi9M2yN5ZSjgjG7709n4Dmt7ovac8DN_BLgTAm1M-t9kl4VxJDQ0xwUWYpOAi5gynZhis2iSCqWWvzZ4v_0mBZgXmAhgBVFpRFOlK5gV-nT8d-pO3uzn3sF7hwCk_9J2edLhDDCdFwZ8rO8jmHV6BpWO_j-zGvEFkV_jo7Kmhc5ig4jbasXKQNjecYmcLJ5aIeBE650zbKgeClOf_5deanxNQ5q4OC9_vo1lY0CeMuUALGZ9BSEZIVAuk-ipHjXoklOl1ApVlc5C8ZaZpYCxbQ3EIEASqMPWsXfNW-O2f4DpxmIbk.1MlPVNtrWiX-rMsupMA5N6GxeCRNSOVR3GArVbhKX14&qid=1735229354&sr=8-1)
 
 <p align="center">
-<img alt="artificial intelligence basics" src="../../../assets/images/5/aib.jpeg"/>
+<img width="65%" alt="artificial intelligence basics" src="../../../assets/images/5/aib.jpeg"/>
 </p>
 
 ## <a name="3"></a>Database Internals
@@ -92,7 +92,7 @@ dizer que valeu a pena, mas definitivamente não foi uma leitura que posso consi
 - [**Link para o livro Database Internals**](https://www.amazon.com.br/Database-Internals-Distributed-Systems-English-ebook/dp/B07XW76VHZ/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.pVEOjduOXDM_zskjXBld1F3o9TiB-7TOz4x9sLerf5grnu7lgPObDlyGqkY8N34_afgJlFRYMApte6ej-isrEB6qHh_nAcW0AS6E1e6aUEgwxNkbHqkMIO0mzQhti4TKQdt--mennr4o1Q5Bncqdf0LSODOGAvG7GYyYk7RGZtVN0DZ5RY-IfAoAT92h4SoM6KAXO0i3mWYeOf7uueGZauFRD2WVCf4Su9Lc777IAsTvE1VUlltwu2YjC8Bkeosl_K4CmVbuMII7zIG5_FH11gODGowJaE_lUnK2IzWYp-6-j7wzLV_O6Y_aDNVgKBWe6eROq0HArVdSkRvz_eALQuaIyRxJ6oHN2h9q05m3yMY2HL-RqegcPsr-QqFg3L1nJMu_pzStmCOy9s1boGPsQlfTOUawwrVpvV_NVkaghjilev7H83KNMCpmVwldOwmX.oxIzW6k7ym1iBmbF_JqQxkdvavvTIVU5u83A2DOBRAI&qid=1735230384&sr=8-1)
 
 <p align="center">
-<img alt="database internals" src="../../../assets/images/5/di.jpeg"/>
+<img width="65%" alt="database internals" src="../../../assets/images/5/di.jpeg"/>
 </p>
 
 ## <a name="4"></a>Building Microservices
@@ -110,7 +110,7 @@ Recomendo para pessoas programadoras em geral.
 - [**Link para o livro Building Microservices**](https://www.amazon.com.br/Building-Microservices-English-Sam-Newman-ebook/dp/B09B5L4NVT/ref=sr_1_1?crid=GFJEPC07EOR8&dib=eyJ2IjoiMSJ9.RPvv9j9fzqMaJkEOxk_nBSAFt734blTw2Gl4_gOaG4JDOZpAKjGIB0zpYn6lNAYUpQ32PDsScOVmk1gHHAdI3CAtJ_QIhxkrBJEq8iKQ1ZHXvURqQcaYYpnV_QQNrGRoJChrDPn_5XrTBqJeVyT-HHJFQ2C36kjQnTJyKZt7x4bBtaAwTzHMUNoGsauZAfKcKtdszs_4IU3xg2DiXyydY7gv0-urKkIjkhJKwUMh_CMmLQe9HMaRPE0tB2abBadSgdFw7nfUEBPctwdVv7pMQgwy9mjozl-WRceAmhQNLNFUppS48voK3f27Mr9RLgpkMIm0uNnUdhubs5yJWGYg_SGf4M0YbVItbPKS2XzierW_CD3lMUKdWMOVyAGHV29HvbzR9S1wW0_rv6YwM0yLpDOChWYJLlSjcUIiSYpzhQ2nnyzL5o2lR1rw7IvobPL0.pPtfrShMZfvRXQA4Emjta8jp5WRNSW4IfcgNTbqE4t4&dib_tag=se&keywords=building+microservices&qid=1735231093&sprefix=building+mi%2Caps%2C218&sr=8-1)
 
 <p align="center">
-<img alt="building microservices" src="../../../assets/images/5/bm.jpeg"/>
+<img width="65%" alt="building microservices" src="../../../assets/images/5/bm.jpeg"/>
 </p>
 
 ### <a name="5"></a>Menções honrosas
