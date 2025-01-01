@@ -12,7 +12,7 @@ conteúdos escritos, coisa que não acontecia antes. Acredito que durante o per�
 aprendendo programação, depois das primeiras semanas fazendo exercícios de lógica
 proposicional e lendo sobre arquitetura de computadores (a, digamos, "zetética" da
 programação), sinto que fiquei muito mal acostumada a buscar informações em vídeo
-("dogmática" da programação; perdão, colegas do Direito). Com isso, no início desse ano
+("dogmática" da programação). Com isso, no início desse ano
 de 2024, me propus a ler mais livros, para:
 
 - Fortalecer o foco e forçar a atenção em conteúdos mais difíceis de se consumir
