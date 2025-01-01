@@ -34,7 +34,7 @@ E por fim separei algumas [menções honrosas](#5).
 
 ## <a name="1"></a>Designing Data-Intensive Applications
 
-De longe, o melhor que eu li no ano. É o tipo de livro para ser relido pelo menos umas 3
+De longe o melhor que eu li no ano. É o tipo de livro para ser relido pelo menos umas 3
 vezes, e isso é o que pretendo fazer. Foi graças a esse livro que consegui entender uma
 apresentação sobre um tema super complexo envolvendo escalabilidade em escrita de dados,
 de um time no trabalho. É também uma excelente forma de revisão sobre sistemas distribuídos,
