@@ -29,7 +29,8 @@ durante o ano, por completo. Essas foram as leituras que fiz em 2024:
 - [Artificial Intelligence Basics](#2)
 - [Database Internals](#3)
 - [Criando Microsserviços](#4)
-  E por fim separei algumas [menções honrosas](#5).
+
+E por fim separei algumas [menções honrosas](#5).
 
 ## <a name="1"></a>Designing Data-Intensive Applications
 
