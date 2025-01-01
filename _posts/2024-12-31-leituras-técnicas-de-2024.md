@@ -28,8 +28,8 @@ durante o ano, por completo. Essas foram as leituras que fiz em 2024:
 - [Designing Data-Intensive Applications](#1)
 - [Artificial Intelligence Basics](#2)
 - [Database Internals](#3)
-- [Building Microservices](#4)
-- [Menções honrosas](#5)
+- [Criando Microsserviços](#4)
+  E por fim separei algumas [menções honrosas](#5).
 
 ## <a name="1"></a>Designing Data-Intensive Applications
 
@@ -95,7 +95,7 @@ dizer que valeu a pena, mas definitivamente não foi uma leitura que posso consi
 <img width="65%" alt="database internals" src="../../../assets/images/5/di.jpeg"/>
 </p>
 
-## <a name="4"></a>Building Microservices
+## <a name="4"></a>Criando Microsserviços
 
 Livro de referência completa para microsserviços, e creio que o livro por si só já tenha
 esse _status_, a julgar pelos reviews e pelas vezes que já vi sendo citado. A leitura foi
@@ -107,7 +107,7 @@ leitura.
 
 Recomendo para pessoas programadoras em geral.
 
-- [**Link para o livro Building Microservices**](https://www.amazon.com.br/Building-Microservices-English-Sam-Newman-ebook/dp/B09B5L4NVT/ref=sr_1_1?crid=GFJEPC07EOR8&dib=eyJ2IjoiMSJ9.RPvv9j9fzqMaJkEOxk_nBSAFt734blTw2Gl4_gOaG4JDOZpAKjGIB0zpYn6lNAYUpQ32PDsScOVmk1gHHAdI3CAtJ_QIhxkrBJEq8iKQ1ZHXvURqQcaYYpnV_QQNrGRoJChrDPn_5XrTBqJeVyT-HHJFQ2C36kjQnTJyKZt7x4bBtaAwTzHMUNoGsauZAfKcKtdszs_4IU3xg2DiXyydY7gv0-urKkIjkhJKwUMh_CMmLQe9HMaRPE0tB2abBadSgdFw7nfUEBPctwdVv7pMQgwy9mjozl-WRceAmhQNLNFUppS48voK3f27Mr9RLgpkMIm0uNnUdhubs5yJWGYg_SGf4M0YbVItbPKS2XzierW_CD3lMUKdWMOVyAGHV29HvbzR9S1wW0_rv6YwM0yLpDOChWYJLlSjcUIiSYpzhQ2nnyzL5o2lR1rw7IvobPL0.pPtfrShMZfvRXQA4Emjta8jp5WRNSW4IfcgNTbqE4t4&dib_tag=se&keywords=building+microservices&qid=1735231093&sprefix=building+mi%2Caps%2C218&sr=8-1)
+- [**Link para o livro Construindo Microsserviços**](https://www.amazon.com.br/Criando-Microsservi%C3%A7os-Projetando-Componentes-Especializados/dp/6586057884/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.dvx4HFxiyI6I07qs7oxjtEYEFK633haephUjCZ4vxYi09x0Dzw5qihvccH3JoSCKpQpIknHQAz36glIWaeJtEoxcFKx6iXgLL0DDX-7a3BM-vz1pqNzK8yc5KmMzAZKHs7PB9QExtMxiWxnMNPZoOglcV4YCfNhsCeV5jM7C8nJxaeoRoIcLUSgdmO11kR4hwEiw1C_IBnbHlyMMEd-ckk8GloqRDzm2bz2ktxIJUquLNH73o6zuXzt4KkHCKip7YGgFk5VtiiwspfKa11HErOnW6yy5koQJMO03pa9Pzyzmy0qqmHehpfg7la-MI53t9pzoq5ht57MEK1yvAJAH_OGZUQB5G5f-eVyJIag9IVaxxA8tM9O_O6pWGZWbKKrX.93vvDhRHRpM26LH-BzkSsj78tQ0-P5pJxHzVSGOOzSA&qid=1735739451&sr=8-1)
 
 <p align="center">
 <img width="65%" alt="building microservices" src="../../../assets/images/5/bm.jpeg"/>
