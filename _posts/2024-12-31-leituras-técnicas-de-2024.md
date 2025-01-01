@@ -59,15 +59,15 @@ que essa edicão seja traduzida para o português.
 Fui de uma leitura bastante técnica e primorosa para um livro OK. Esse livro é bom para
 deixar a gente refletindo e ter algumas noções básicas sobre o assunto, mas não sei se é
 uma leitura útil para todas as pessoas da área tech. Para alguém de fora da área pode ser
-mais interessante. No meu caso foi últil para refletir sobre, apenas como leitura superficial
-mesmo, mas achei o último capítulo meio abaixo do resto. No geral, pessoalmente valeu a
-pena, por ser uma leitura leve e com alguns conceitos introdutórios.
+mais interessante. No meu caso foi últil para refletir sobre o assunto, apenas como
+leitura superficial mesmo, mas achei o último capítulo meio abaixo do resto. No geral,
+pessoalmente valeu a pena, por ser uma leitura leve e com alguns conceitos introdutórios.
 
 Vale frisar que esse livro foi publicado em 2019, antes do hype de generative AI, então
 o autor, Tom Taulli, não estava apenas surfando a onda.
 
 Se você é da área tech e quer ler algo profundo sobre AI, vá ler [Norvig e Russell](https://www.amazon.com.br/Artificial-Intelligence-Modern-Approach-English-ebook/dp/B092QVWSNX/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.p6JTNZQOtrZx-r90u2ah_vAjmfHiZ7Ncd2HnQlawuao_QUC6esfn_bjTAxGihdxFrlwwSfT4w-arxRxtxEHbmyfnUybF39eu_zZ-qd1q5pWtHpPp-_4eqMOiY1bMVsebhKEyrR8zquobm6gq33-Kbt7CBbM-dFjAJ8OgTc3Ha3Gg7CkOOXBCkkP-4bkDMrLCSI-EbWfCN8NpGbRrpkgYfBA_Czygi8-IZOZxuipU-KBoR8zxeJ9muY8c4zsw13dYXaWIeiHByOk2FM9pm7x17f8d-os9uU1LI9nri549-bbfPICKVgTsF3yudjCyNO-GIglRnlrNkfkc4G1oRt-gxd1TGDdZdUvd5O9CXDlwwrbGavY-lFHoP_6IA5A2zZhGdhRrFPwbUHzL2TbessByuumh4MZzbP3-iOZV7Umly2yPfKFWJkYXqIlQunO4zGAJ.ev32P58-2YIzcDv8CDAMDh4-EXNW90ztOiMiXcoxkPo&qid=1735229802&sr=8-2). Se quer colocar a
-mão na massa com algo atual, estou vendo bons reviews sobre [Build a Large Language Model (from Scratch)](https://www.amazon.com.br/Yourself-Build-Language-Scratch-English-ebook/dp/B0DQLMYJLJ/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.f_1HBi0zdrW6-jWiZT7RBHljTbR18kiiPVoB6pRvXlbJ8xNArtegOgTY80rMoraAm5jtsYcbvKBNWRzWkzDg4HZN5AgjTz5MIrIQWu_UOlnIKgXI4mBpsQ31wpgohh-ZD7i4jkqc6oXjhcjEmg8ImuRFFnutFXU6Bu0lpuXoE2ihGF642EQUx9czikkzViRAfrtWJY9QPCUMeXlzDJSVzkSZB5wLp7iXiFfUF5Q6GXuntzYElWgeQC295z71BUf_m6TOO2n3pUxfOfptJydpl-HTRzY5k0rQ38eyf5ot7F4ITaE6NSH7SxNAJ8qRWZkoE0CqrZc-axbbYZnPZX9ap_UE-twprAZqEmwJrjoz1ddKwz_nZNyOVej8s65TGEMWrgnmPzBX3aL_kwCai20vtr1eGJ_XGDz8BQZ5l39fdbrtzFoUqMCjeiQUZ6i0Mxwi._On-gcHhocJ7kyszKXq1VlWT9OpQcuVDKQ4eLikMJRQ&qid=1735230107&sr=8-1) do Sebastian Raschka.
+mão na massa com algo atual, estou vendo bons reviews sobre [Build a Large Language Model (from Scratch)](https://www.amazon.com.br/Build-Large-Language-Model-Scratch/dp/1633437167/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.f_1HBi0zdrW6-jWiZT7RBHljTbR18kiiPVoB6pRvXlbJ8xNArtegOgTY80rMoraAm5jtsYcbvKBNWRzWkzDg4HZN5AgjTz5MIrIQWu_UOlnIKgXI4mBpsQ31wpgohh-ZD7i4jkqc6oXjhcjEmg8ImuRFFnutFXU6Bu0lpuXoE2ihGF642EQUx9czikkzViRAfrtWJY9QPCUMeXlzDJSVzkSZB5wLp7iXiFfUF5Q6GXuntzYElWgeQC295z71BUf_m6TOO2n3pUxfOfptJydpl-HTRzY5k0rQ38eyf5ot7F4ITaE6NSH7SxNAJ8qRWZkoE0CqrZc-axbbYZnPZX9ap_UE-twprAZqEmwJrjoz1ddKwz_nZNyOVej8s65TGEMWrgnmPzBX3aL_kwCai20vtr1eGJ_XGDz8BQZ5l39fdbrtzFoUqMCjeiQUZ6i0Mxwi._On-gcHhocJ7kyszKXq1VlWT9OpQcuVDKQ4eLikMJRQ&qid=1735230107&sr=8-1) do Sebastian Raschka.
 
 - [**Link para o livro Artificial Intelligence Basics**](https://www.amazon.com.br/Artificial-Intelligence-Basics-Non-Technical-Introduction-ebook/dp/B07VY31R29/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.jt4CqVTrLNenFCBEI6nCEdIJw-P_AqzN8WZDreOP2ipZYiDjG2ds9s_nPg-P47vstmoVP3NrMiG15aBX2P7GEXSjYjxNsi21buM50tGwWBulGMJQJWETWuO0YYMe9M2XzTMJECwvfLRCRRySi9M2yN5ZSjgjG7709n4Dmt7ovac8DN_BLgTAm1M-t9kl4VxJDQ0xwUWYpOAi5gynZhis2iSCqWWvzZ4v_0mBZgXmAhgBVFpRFOlK5gV-nT8d-pO3uzn3sF7hwCk_9J2edLhDDCdFwZ8rO8jmHV6BpWO_j-zGvEFkV_jo7Kmhc5ig4jbasXKQNjecYmcLJ5aIeBE650zbKgeClOf_5deanxNQ5q4OC9_vo1lY0CeMuUALGZ9BSEZIVAuk-ipHjXoklOl1ApVlc5C8ZaZpYCxbQ3EIEASqMPWsXfNW-O2f4DpxmIbk.1MlPVNtrWiX-rMsupMA5N6GxeCRNSOVR3GArVbhKX14&qid=1735229354&sr=8-1)
 
@@ -87,7 +87,7 @@ com uma [explicação visual bem legal sobre b-trees](https://www.youtube.com/wa
 
 Recomendo para pessoas curiosas, quem trabalha na área de dados, banco de dados, etc. Pode
 ser uma leitura útil e interessante, mas vai depender bastante da pessoa. No meu caso posso
-dizer que valeu a pena, mas definitivamente não foi uma leitura que posso considerar,
+dizer que valeu a pena, mas definitivamente não foi uma leitura que posso considerar
 "agradável", já que fiquei empacando.
 
 - [**Link para o livro Database Internals**](https://www.amazon.com.br/Database-Internals-Distributed-Systems-English-ebook/dp/B07XW76VHZ/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.pVEOjduOXDM_zskjXBld1F3o9TiB-7TOz4x9sLerf5grnu7lgPObDlyGqkY8N34_afgJlFRYMApte6ej-isrEB6qHh_nAcW0AS6E1e6aUEgwxNkbHqkMIO0mzQhti4TKQdt--mennr4o1Q5Bncqdf0LSODOGAvG7GYyYk7RGZtVN0DZ5RY-IfAoAT92h4SoM6KAXO0i3mWYeOf7uueGZauFRD2WVCf4Su9Lc777IAsTvE1VUlltwu2YjC8Bkeosl_K4CmVbuMII7zIG5_FH11gODGowJaE_lUnK2IzWYp-6-j7wzLV_O6Y_aDNVgKBWe6eROq0HArVdSkRvz_eALQuaIyRxJ6oHN2h9q05m3yMY2HL-RqegcPsr-QqFg3L1nJMu_pzStmCOy9s1boGPsQlfTOUawwrVpvV_NVkaghjilev7H83KNMCpmVwldOwmX.oxIzW6k7ym1iBmbF_JqQxkdvavvTIVU5u83A2DOBRAI&qid=1735230384&sr=8-1)
@@ -98,7 +98,7 @@ dizer que valeu a pena, mas definitivamente não foi uma leitura que posso consi
 
 ## <a name="4"></a>Criando Microsserviços
 
-Livro de referência completa para microsserviços, e creio que o livro por si só já tenha
+Livro de referência completa para microsserviços e creio que o livro por si só já tenha
 esse _status_, a julgar pelos reviews e pelas vezes que já vi sendo citado. A leitura foi
 bem fácil e fluida, não só pela escrita, mas pelo fato da maioria dos temas e tecnologias
 já fazerem parte do meu dia a dia, ou pelo menos já ouvi falar e está próximo de mim. Li
@@ -106,7 +106,7 @@ a versão em português e notei alguns erros, além da sensação esquisita de v
 traduzidos que eu só vejo em inglês no dia a dia, mas não foi nada que atrapalhasse a
 leitura.
 
-Recomendo para pessoas programadoras em geral.
+Recomendo a leitura.
 
 - [**Link para o livro Construindo Microsserviços**](https://www.amazon.com.br/Criando-Microsservi%C3%A7os-Projetando-Componentes-Especializados/dp/6586057884/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.dvx4HFxiyI6I07qs7oxjtEYEFK633haephUjCZ4vxYi09x0Dzw5qihvccH3JoSCKpQpIknHQAz36glIWaeJtEoxcFKx6iXgLL0DDX-7a3BM-vz1pqNzK8yc5KmMzAZKHs7PB9QExtMxiWxnMNPZoOglcV4YCfNhsCeV5jM7C8nJxaeoRoIcLUSgdmO11kR4hwEiw1C_IBnbHlyMMEd-ckk8GloqRDzm2bz2ktxIJUquLNH73o6zuXzt4KkHCKip7YGgFk5VtiiwspfKa11HErOnW6yy5koQJMO03pa9Pzyzmy0qqmHehpfg7la-MI53t9pzoq5ht57MEK1yvAJAH_OGZUQB5G5f-eVyJIag9IVaxxA8tM9O_O6pWGZWbKKrX.93vvDhRHRpM26LH-BzkSsj78tQ0-P5pJxHzVSGOOzSA&qid=1735739451&sr=8-1)
 
@@ -120,7 +120,7 @@ Precisei ler alguns capítulos de uns livros para a pós-gradução, então não
 completo:
 
 - [**Cassandra The Definitive Guide**](https://www.amazon.com.br/Cassandra-Definitive-Guide-Revised-Distributed/dp/1492097144/ref=sr_1_2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1G9IQ2FQ24KAB&dib=eyJ2IjoiMSJ9.jBo07BQNSuzzYY4HqTN1iz3IAj_vf-b0vv8ucp0WTy8k7JPxLg3KzDwZszfFjb5LYLDYr-i95mq3HXWTFgCffLfgcWZ2X3_yyolAZ5OFh9mkzOM71PqstyDjgiuBTJ6zi0tqF-nAJu6j-_pkUaDdI8n1J3ZMpOFHF5lWyiiCLXJYj78Cn3-XWsyV5_GJOf8Kw-ccxJay0BQz3vH5DDg2iCq-KH_WMbm4ABfJPbiNHB1QTrk_HbCgUlJCYVe5QwqxvZdmYR5brhI8MgxVE3VELwx9S6PVKaaPQKD6m2Qsw50nYyYnNRgBPC9WDGGaWcsQc_BUDd46z3t7PSV2zAQhvDopKrBlS4GFiLEeiYBpCuU-2elvKbPXnrWxTjAAJkar0uPmCeKQka6D9QN9lsU6FLoJ2CAgJoKJ-lZLBW7ctoPTZcIwJfSlS6ijrjQFsS5H.Y4hRmGEepsu669XnnZr9NLpoFO-As-JwCkNg3AejWP4&dib_tag=se&keywords=apache+cassandra&qid=1735224364&sprefix=apachecassandra+%2Caps%2C183&sr=8-2&ufe=app_do%3Aamzn1.fos.e05b01e0-91a7-477e-a514-15a32325a6d6): livro excelente e completo sobre o Apache
-  Cassandra. Achei bem complexo entender o Cassandra e esse livro ajudou muito com isso;
+  Cassandra. Achei bem complexo entender o Cassandra e esse livro ajudou muito;
 - [**MongoDB The Definitive Guide**](https://www.amazon.com.br/MongoDB-Definitive-Powerful-Scalable-Storage-ebook/dp/B082J7DMBX/ref=sr_1_2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3U8GSO108UJ68&dib=eyJ2IjoiMSJ9.WJpjFIYDai0U8v6hRylC75yuoja2kamkMexqW3-bieQGHGBuX5J7exrfFoKWvuZQ_SrLN8dJBOgsdamuUreWjb5ZTHoLM7nXLqWi-sf0z8ck_SVz5r1ccrHU3IJ6rrTW3JHBY-KpOmYPD0C9MAuyVsgbQVlaEfQsArvNSPb98gEYK_WWMfd1wNrTLImu8cKmyCIS2Wez0cI--4Gcda9q6uZcv8udy_W5jmSLFpBHy6Ib6OGrT-gtOgDzYq4XDhhMg7RfUcO1-dkdf5qVEbkygcxGgFY7AZVMZK4srDXVR4I9NC9BQ4rSJJO1Z9HzEXxt176qckpfQuz--eZjK28aYU41qmzKq7_YnJl5EjzficGyzTf8rtnfMTn0FayWcSqGNQQkIUNYv-n93XMtONNSUSg9AouHHWu60bKLFX909-XawEQmtVuFje63hn2O3KKt.ZBo-s-Tk00KMPHHkojkbAQm24h4XRVq_rt0xlD5NdoI&dib_tag=se&keywords=mongodb&qid=1735224395&sprefix=mongod%2Caps%2C174&sr=8-2):
   livro completinho sobre MongoDB, me ajudou não só com a parte teórica, mas também tirei
   várias dúvidas quando estava fazendo o projeto prático.
