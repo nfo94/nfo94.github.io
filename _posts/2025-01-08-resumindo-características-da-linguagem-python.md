@@ -8,7 +8,7 @@ published: true
 ---
 
 <figure align="center">
-  <img src="pic_trulli.jpg" alt="Trulli">
+  <img src="../../../assets/images/6/snake-5483729_640.jpg" alt="Trulli - imagem de cobra do Pixabay">
   <figcaption><i>Imagem de <a href="https://pixabay.com/pt/users/willypp-15092123/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5483729">willypp</a> por <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5483729">Pixabay</a></i></figcaption>
 </figure>
 

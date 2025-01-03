@@ -8,7 +8,7 @@ published: true
 ---
 
 <figure align="center">
-  <img src="../../../assets/images/4/jupyter-notebook.png" alt="jupyter-notebook">
+  <img src="../../../assets/images/4/jupyter-notebook.webp" alt="jupyter-notebook">
   <figcaption><i>Imagem retirada do site do Jupyter Notebooks</i></figcaption>
 </figure>
 
