@@ -60,9 +60,9 @@ entendi que atualmente o CAP theorem é como _knobs_, como se pudéssemos ajusta
 um pouco mais uma ou outra configuração. Recomendo ler um pouco mais sobre o
 teorema CAP no capítulo 9 do Designing Data Intensive Application.
 
-<p align="center">
+<div align="center">
 <img alt="cap" src="../../../assets/images/3/cap.png"/>
-</p>
+</div>
 
 ## <a name="2"></a>"Row-oriented": o que isso significa?
 

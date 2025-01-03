@@ -7,9 +7,10 @@ description: como rodar o apache cassandra e jupyter notebooks com spark localme
 published: true
 ---
 
-<p align="center">
-<img alt="jupyter-notebook" src="../../../assets/images/4/jupyter-notebook.png"/>
-</p>
+<figure align="center">
+  <img src="../../../assets/images/4/jupyter-notebook.png" alt="jupyter-notebook">
+  <figcaption><i>Imagem retirada do site do Jupyter Notebooks</i></figcaption>
+</figure>
 
 Hoje vou mostrar como configurar um projeto para análise de dados com o Cassandra e o
 Jupyter Notebook com Pyspark, usando tudo no Docker. Vamos abordar:
@@ -177,9 +178,9 @@ O volume, assim como nos cassandras, é para poder salvar os notebooks no host. 
 container está na mesma rede que os outros e o `JUPYTER_ENABLE_LAB` é para que a gente
 não precise fazer login ou usar token, bastará abrir o browser no `http://localhost:8888`:
 
-<p align="center">
+<div align="center">
 <img alt="jupyter" src="../../../assets/images/4/jupyter.png"/>
-</p>
+</div>
 
 ## <a name="4"></a>Iniciando uma sessão Spark conectada no Cassandra
 
@@ -229,9 +230,9 @@ spark.active()
 
 Você verá algo assim:
 
-<p align="center">
+<div align="center">
 <img alt="jupyter-pyspark" src="../../../assets/images/4/jupyter-pyspark.png"/>
-</p>
+</div>
 
 ---
 

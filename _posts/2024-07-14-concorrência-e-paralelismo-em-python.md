@@ -31,9 +31,9 @@ Em computação um **processo é uma instância de uma aplicação rodando**. Se
 
 A imagem a seguir foi retirada do [livro do Francis Machado e do Luis Maia](https://www.amazon.com.br/Arquitetura-Sistemas-Operacionais-Incluindo-Exerc%C3%ADcios/dp/8521622104/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=150WW8OAI7BK3&dib=eyJ2IjoiMSJ9.A1ZhX8ImePrgue4fqDmOFhTfVbkIf5kIlU2jq5kd4laG4KvRRBXQekMR1rhx34OdkcpofR8kV8Ln0SjtzbN9on9rfe1wq8VNaqPBEYyuFuE.byPfWCKB9260AyrDAXjLab022xEJbcexS5jc_qZgex0&dib_tag=se&keywords=Arquitetura+de+Sistemas+Operacionais%3A+Incluindo+Exerc%C3%ADcios+com+o+Simulador+SOSIM+e+Quest%C3%B5es+do+ENADE&qid=1720896386&sprefix=arquitetura+de+sistemas+operacionais+incluindo+exerc%C3%ADcios+com+o+simulador+sosim+e+quest%C3%B5es+do+enade%2Caps%2C137&sr=8-1):
 
-<p align="center">
+<div align="center">
 <img alt="processo" src="../../../assets/images/1/processo.png" alt="processo" />
-</p>
+</div>
 
 Essas informações são necessárias para a execução de um programa.
 
@@ -45,9 +45,9 @@ As várias threads de um processo hipotético podem ser executadas concorrenteme
 
 A imagem abaixo foi retirada do [Wikipedia](https://en.wikipedia.org/wiki/File:Concepts-_Program_vs._Process_vs._Thread.jpg#filelinks):
 
-<p align="center">
+<div align="center">
 <img alt="programa vs processo vs thread" src="../../../assets/images/1/programa-vs-processo-vs-thread.jpg"/>
-</p>
+</div>
 
 Interpretando a imagem acima, podemos extrair que um programa fica salvo em disco (memória secundária, não-volátil) e inclui várias instruções, podendo ser instanciado (iniciado) em um ou mais processos, e esses por sua vez podem ter várias threads associadas.
 
@@ -71,9 +71,9 @@ Aqui estamos considerando a implementação de referência do Python. **O CPytho
 
 A ideia do GIL é prevenir _race conditions_, que podem surgir quando mais de uma thread precisa referenciar um objeto Python ao mesmo tempo. Se mais de uma thread modificar uma variável compartilhada essa variável pode ficar em um estado inesperado. Imagem retirada do [livro do Matthew Fowler](https://www.amazon.com.br/Python-Concurrency-Asyncio-Matthew-Fowler/dp/1617298662/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=FRBELDMJHT23&dib=eyJ2IjoiMSJ9.5wyYTHKbZ2idvH8GDqdbsq8qRPv7t5SNNgCQixjEVop7TeR9YRqA66AL9DV1wY3BDFdBJN0pwlU42loLLQGPfFRIKTBDWUW3NzW89oL-TWOnyuyCSLBpYg32aUEyvo5Et8n9sA-Feyh4aMTTeEGydk8r9QKSR-i9FHsBOteOdSn9pQuhlgSHG2YU0jZ4FiaBOXUznz3Ka7XEtQc_ctlNnBN0sDGXPuLqYVgpyhEEYAGP6aTFzdY-SsLaB3duqYq9r15Q6Ux3Zat5I4eqg68T6Gf_jVopvKUv8QJ_je91pOA.eYk31md2uMKA_h8es6XGgFyU1luNGSDMeCdmmaPw0Yc&dib_tag=se&keywords=asyncio&qid=1720900096&sprefix=asyncio%2Caps%2C170&sr=8-3&ufe=app_do%3Aamzn1.fos.a492fd4a-f54d-4e8d-8c31-35e0a04ce61e):
 
-<p align="center">
+<div align="center">
 <img alt="race condition" src="../../../assets/images/1/race-condition.png"/>
-</p>
+</div>
 
 Na imagem acima duas threads estão tentando incrementar uma reference count simultaneamente, e aí ao invés da contagem dar 2, já que as duas estão incrementando 1, o resultado final dá 1 (cada thread é uma coluna).
 
@@ -92,9 +92,9 @@ Nesse contexto, temos dois tipos de multitasking:
 
 A imagem abaixo ajuda a sumarizar concorrência em Python:
 
-<p align="center">
+<div align="center">
 <img alt="concorrência" src="../../../assets/images/1/concorrencia.png"/>
-</p>
+</div>
 
 ## <a name="6"></a>O que é paralelismo?
 
@@ -102,9 +102,9 @@ A imagem abaixo ajuda a sumarizar concorrência em Python:
 
 No Python paralelismo é alcançado, por exemplo, com a lib `multiprocessing`, onde teremos mais de um processo Python, cada um com seu GIL. A imagem ajuda a ilustrar paralelismo em Python:
 
-<p align="center">
+<div align="center">
 <img alt="paralelismo" src="../../../assets/images/1/paralelismo.png"/>
-</p>
+</div>
 
 ## <a name="7"></a>A biblioteca asyncio
 

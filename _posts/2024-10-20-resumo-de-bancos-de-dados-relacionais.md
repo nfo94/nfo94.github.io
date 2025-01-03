@@ -28,9 +28,9 @@ de estado que possui as propriedades ACID**.
 
 ## <a name="2"></a>ACID
 
-<p align="center">
+<div align="center">
 <img alt="acid" src="../../../assets/images/2/acid.png"/>
-</p>
+</div>
 
 ACID é um acrônimo para atômico, consistente, isolado e durável. Você pode encontrar
 a expressão _ACID compliant_ para se referir a um banco que dê suporte a essas
@@ -67,9 +67,9 @@ terminar.
 
 Abaixo uma ilustração do livro Designing Data Intensive Application:
 
-<p align="center">
+<div align="center">
 <img alt="two-phase-commit" src="../../../assets/images/2/two-phase-commit.png"/>
-</p>
+</div>
 
 O 2PC espera um node responder, mesmo que o node já tenha morrido e, para não ter
 um loop rodando para sempre, esperando o node ficar vivo, podemos configurar um
@@ -123,9 +123,9 @@ Existem algumas estratégias bem conhecidas de sharding:
 Recomendo fortemente a leitura do livro Designing Data Intensive Applications para
 navegar em assuntos complementares a esse texto:
 
-<p align="center">
+<div align="center">
 <img alt="designing data intensive applications" src="../../../assets/images/2/designing-data-intensive-applications.png"/>
-</p>
+</div>
 ---
 
 Fontes:
