@@ -51,7 +51,7 @@ que essa edicão seja traduzida para o português.
 - [**Link para o livro Designing Data-Intensive Applications**](https://www.amazon.com.br/Designing-Data-Intensive-Applications-Reliable-Maintainable-ebook/dp/B06XPJML5D/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.uKKyaNHuzp5D7DchHIgwHtXJv8tk_RD31Eetcm-YM317qEFGsD6Tq8EXynYuUFgG2U60SDWNVKMMtCkNGeHhauCgDO8KiyDBJAzyg0MdQ6aGORrnUGA7gle55HimQdB3T8YzwQb40LbedZQP54uTEbspTsMH-UnTcrtVoQbhIdU5cvoyTQIrTj_zWpH4xHMdcxEbgbW1ubwle-L7DjEjcBOey9AOAMbyEvm3zcNgMl-fO3MpzZoiiTGurcOwM1KA0BuW4e3Ri9V1IfqQS9dLGi4jEevLKujETxx4WK0vTk9Vpz5zKvZjAyhDw_cOLdgOg2vAvOtaApmfh2CnoEDBFD_mv7zo8XnR9wzdBV7lX8MYBrDPnboDwCIYyaWtFHkR3eg0fjDAPQID-vLAwe9CsMm4ZFzEihannjz_9ujWM5cjzkpuGYBEYSLaLWQNOEPh.imRmUHBJGkV1Btbrug3EDo_o23CRxdYv9YwPmwwS--A&qid=1735228860&sr=8-1)
 
 <div align="center">
-<img  width="350px" alt="designin data-intensive applications" src="../../../assets/images/5/ddia.webp"/>
+<img  width="55%" alt="designin data-intensive applications" src="../../../assets/images/5/ddia.webp"/>
 </div>
 
 ## <a name="2"></a>Artificial Intelligence Basics
@@ -72,7 +72,7 @@ mão na massa com algo atual, estou vendo bons reviews sobre [Build a Large Lang
 - [**Link para o livro Artificial Intelligence Basics**](https://www.amazon.com.br/Artificial-Intelligence-Basics-Non-Technical-Introduction-ebook/dp/B07VY31R29/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.jt4CqVTrLNenFCBEI6nCEdIJw-P_AqzN8WZDreOP2ipZYiDjG2ds9s_nPg-P47vstmoVP3NrMiG15aBX2P7GEXSjYjxNsi21buM50tGwWBulGMJQJWETWuO0YYMe9M2XzTMJECwvfLRCRRySi9M2yN5ZSjgjG7709n4Dmt7ovac8DN_BLgTAm1M-t9kl4VxJDQ0xwUWYpOAi5gynZhis2iSCqWWvzZ4v_0mBZgXmAhgBVFpRFOlK5gV-nT8d-pO3uzn3sF7hwCk_9J2edLhDDCdFwZ8rO8jmHV6BpWO_j-zGvEFkV_jo7Kmhc5ig4jbasXKQNjecYmcLJ5aIeBE650zbKgeClOf_5deanxNQ5q4OC9_vo1lY0CeMuUALGZ9BSEZIVAuk-ipHjXoklOl1ApVlc5C8ZaZpYCxbQ3EIEASqMPWsXfNW-O2f4DpxmIbk.1MlPVNtrWiX-rMsupMA5N6GxeCRNSOVR3GArVbhKX14&qid=1735229354&sr=8-1)
 
 <div align="center">
-<img width="350px" alt="artificial intelligence basics" src="../../../assets/images/5/aib.webp"/>
+<img width="58%" alt="artificial intelligence basics" src="../../../assets/images/5/aib.webp"/>
 </div>
 
 ## <a name="3"></a>Database Internals
@@ -93,7 +93,7 @@ dizer que valeu a pena, mas definitivamente não foi uma leitura que posso consi
 - [**Link para o livro Database Internals**](https://www.amazon.com.br/Database-Internals-Distributed-Systems-English-ebook/dp/B07XW76VHZ/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.pVEOjduOXDM_zskjXBld1F3o9TiB-7TOz4x9sLerf5grnu7lgPObDlyGqkY8N34_afgJlFRYMApte6ej-isrEB6qHh_nAcW0AS6E1e6aUEgwxNkbHqkMIO0mzQhti4TKQdt--mennr4o1Q5Bncqdf0LSODOGAvG7GYyYk7RGZtVN0DZ5RY-IfAoAT92h4SoM6KAXO0i3mWYeOf7uueGZauFRD2WVCf4Su9Lc777IAsTvE1VUlltwu2YjC8Bkeosl_K4CmVbuMII7zIG5_FH11gODGowJaE_lUnK2IzWYp-6-j7wzLV_O6Y_aDNVgKBWe6eROq0HArVdSkRvz_eALQuaIyRxJ6oHN2h9q05m3yMY2HL-RqegcPsr-QqFg3L1nJMu_pzStmCOy9s1boGPsQlfTOUawwrVpvV_NVkaghjilev7H83KNMCpmVwldOwmX.oxIzW6k7ym1iBmbF_JqQxkdvavvTIVU5u83A2DOBRAI&qid=1735230384&sr=8-1)
 
 <div align="center">
-<img width="350px" alt="database internals" src="../../../assets/images/5/di.webp"/>
+<img width="55%" alt="database internals" src="../../../assets/images/5/di.webp"/>
 </div>
 
 ## <a name="4"></a>Criando Microsserviços
@@ -111,7 +111,7 @@ Recomendo a leitura.
 - [**Link para o livro Construindo Microsserviços**](https://www.amazon.com.br/Criando-Microsservi%C3%A7os-Projetando-Componentes-Especializados/dp/6586057884/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.dvx4HFxiyI6I07qs7oxjtEYEFK633haephUjCZ4vxYi09x0Dzw5qihvccH3JoSCKpQpIknHQAz36glIWaeJtEoxcFKx6iXgLL0DDX-7a3BM-vz1pqNzK8yc5KmMzAZKHs7PB9QExtMxiWxnMNPZoOglcV4YCfNhsCeV5jM7C8nJxaeoRoIcLUSgdmO11kR4hwEiw1C_IBnbHlyMMEd-ckk8GloqRDzm2bz2ktxIJUquLNH73o6zuXzt4KkHCKip7YGgFk5VtiiwspfKa11HErOnW6yy5koQJMO03pa9Pzyzmy0qqmHehpfg7la-MI53t9pzoq5ht57MEK1yvAJAH_OGZUQB5G5f-eVyJIag9IVaxxA8tM9O_O6pWGZWbKKrX.93vvDhRHRpM26LH-BzkSsj78tQ0-P5pJxHzVSGOOzSA&qid=1735739451&sr=8-1)
 
 <div align="center">
-<img width="350px" alt="building microservices" src="../../../assets/images/5/bm.webp"/>
+<img width="55%" alt="building microservices" src="../../../assets/images/5/bm.webp"/>
 </div>
 
 ### <a name="5"></a>Menções honrosas
