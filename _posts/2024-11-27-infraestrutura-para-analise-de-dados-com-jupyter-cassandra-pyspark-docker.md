@@ -179,7 +179,7 @@ container está na mesma rede que os outros e o `JUPYTER_ENABLE_LAB` é para que
 não precise fazer login ou usar token, bastará abrir o browser no `http://localhost:8888`:
 
 <div align="center">
-<img alt="jupyter" src="../../../assets/images/4/jupyter.png"/>
+<img alt="jupyter" src="../../../assets/images/4/jupyter.webp"/>
 </div>
 
 ## <a name="4"></a>Iniciando uma sessão Spark conectada no Cassandra
@@ -231,7 +231,7 @@ spark.active()
 Você verá algo assim:
 
 <div align="center">
-<img alt="jupyter-pyspark" src="../../../assets/images/4/jupyter-pyspark.png"/>
+<img alt="jupyter-pyspark" src="../../../assets/images/4/jupyter-pyspark.webp"/>
 </div>
 
 ---
