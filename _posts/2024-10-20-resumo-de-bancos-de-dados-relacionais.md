@@ -29,7 +29,7 @@ de estado que possui as propriedades ACID**.
 ## <a name="2"></a>ACID
 
 <div align="center">
-<img alt="acid" src="../../../assets/images/2/acid.png"/>
+<img alt="acid" src="../../../assets/images/2/acid.webp"/>
 </div>
 
 ACID é um acrônimo para atômico, consistente, isolado e durável. Você pode encontrar
@@ -68,7 +68,7 @@ terminar.
 Abaixo uma ilustração do livro Designing Data Intensive Application:
 
 <div align="center">
-<img alt="two-phase-commit" src="../../../assets/images/2/two-phase-commit.png"/>
+<img alt="two-phase-commit" src="../../../assets/images/2/two-phase-commit.webp"/>
 </div>
 
 O 2PC espera um node responder, mesmo que o node já tenha morrido e, para não ter
@@ -124,7 +124,7 @@ Recomendo fortemente a leitura do livro Designing Data Intensive Applications pa
 navegar em assuntos complementares a esse texto:
 
 <div align="center">
-<img alt="designing data intensive applications" src="../../../assets/images/2/designing-data-intensive-applications.png"/>
+<img alt="designing data intensive applications" src="../../../assets/images/2/designing-data-intensive-applications.webp"/>
 </div>
 ---
 

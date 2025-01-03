@@ -61,7 +61,7 @@ um pouco mais uma ou outra configuração. Recomendo ler um pouco mais sobre o
 teorema CAP no capítulo 9 do Designing Data Intensive Application.
 
 <div align="center">
-<img alt="cap" src="../../../assets/images/3/cap.png"/>
+<img alt="cap" src="../../../assets/images/3/cap.webp"/>
 </div>
 
 ## <a name="2"></a>"Row-oriented": o que isso significa?

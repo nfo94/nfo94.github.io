@@ -93,7 +93,7 @@ diretamente em uma máquina virtual. Recomendo fortemente a [aula do Eduardo Men
 sobre isso:
 
 <div align="center">
-<img alt="cpython" src="../../../assets/images/6/cpython.png"/>
+<img alt="cpython" src="../../../assets/images/6/cpython.webp"/>
 </div>
 
 > _Mas qual a diferença entre esse processo e um processo de compilação de um linguagem
@@ -104,7 +104,7 @@ Para ficar mais claro, veja que em uma linguagem 100% compilada a linguagem inte
 Para ilustrar um pouco melhor esse processo acompanhe esse slide da [aula do Eduardo Mendes](https://www.youtube.com/watch?v=pxfZTAJDipY&t=789s):
 
 <div align="center">
-<img alt="compilação" src="../../../assets/images/6/compilação.png"/>
+<img alt="compilação" src="../../../assets/images/6/compilação.webp"/>
 </div>
 
 ## <a name="4"></a>Roda em diferentes plataformas
