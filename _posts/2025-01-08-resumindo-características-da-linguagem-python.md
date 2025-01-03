@@ -4,7 +4,7 @@ layout: post
 date: 2025-01-08
 tags: python
 description: resumindo características de python
-published: false
+published: true
 ---
 
 <figure align="center">
@@ -22,7 +22,6 @@ Mendes](https://www.youtube.com/@Dunossauro).
 - [Tipagem dinâmica e forte](#2)
 - [Linguagem intepretada com um passo de compilação](#3)
 - [Roda em diferentes plataformas](#4)
-- [Modelo de concorrência](#5)
 
 ## <a name="1"></a>Propósito geral e alto nível
 
@@ -90,7 +89,7 @@ interpretada e executada por outro programa. Aqui temos um _catch_ que confunde 
 pois na real o CPython, que é o interpretador referência da linguagem, é um compilador de
 bytecode e também interpretador: ele compila o código Python e, com o resultado dessa
 compilação (que chamamos de bytecode ou _intermediary language_), roda esse resultado
-diretamente em uma máquina virtual. Recomendo fortemente a aula do [Eduardo Mendes](https://www.youtube.com/watch?v=pxfZTAJDipY)
+diretamente em uma máquina virtual. Recomendo fortemente a [aula do Eduardo Mendes](https://www.youtube.com/watch?v=pxfZTAJDipY&t=946s)
 sobre isso:
 
 <div align="center">
@@ -100,7 +99,9 @@ sobre isso:
 > _Mas qual a diferença entre esse processo e um processo de compilação de um linguagem
 > como Java?_
 
-Para ficar mais claro, veja que em uma linguagem compilada esse processo
+Para ficar mais claro, veja que em uma linguagem 100% compilada a linguagem intermediária
+é transformada para linguagem de máquina, para então ser rodada pelo computador de fato.
+Para ilustrar um pouco melhor esse processo acompanhe esse slide da [aula do Eduardo Mendes](https://www.youtube.com/watch?v=pxfZTAJDipY&t=789s):
 
 <div align="center">
 <img alt="compilação" src="../../../assets/images/6/compilação.png"/>
@@ -108,14 +109,12 @@ Para ficar mais claro, veja que em uma linguagem compilada esse processo
 
 ## <a name="4"></a>Roda em diferentes plataformas
 
-O Python **roda em diferentes plataformas**, pois você pode escrever e rodar um programa
-Python em qualquer computador moderno que tenha Python instalado ("instalar" significa
-que você terá o interpretador Python para rodar a linguagem).
-
-## <a name="5"></a>Modelo de concorrência
-
-Existem diferentes formas de lidar com concorrência no Python. Escrevi sobre concorrência
-em Python e recomendo a leitura [desse texto sobre `threading`, `multiprocessing` e `asyncio`](https://nfo94.github.io/2024/07/14/concorr%C3%AAncia-e-paralelismo-em-python.html) que escrevi a um tempo.
+Se você viu essa afirmação em algum lugar, perceba que isso é dito pois você pode escrever
+e rodar um programa Python em qualquer computador moderno que tenha Python instalado.
+"Instalar" significa ter o interpretador Python para rodar a linguagem. Em computadores
+com sistema operacional baseado em Unix, como Linux e MacOS, é comum que o interpretador
+Python já esteja instalado em alguma versão. No caso de Windows, até onde sei, você
+precisa ir lá no site no Python, baixar e instalar o interpretador.
 
 ---
 
