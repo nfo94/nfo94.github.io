@@ -39,7 +39,7 @@ cientistas de dados, etc. Segundo Reis e Housley:
 > uso, como análise ou aprendizado de máquina
 
 Ou seja, engenharia de dados foca em receber ou extrair dados crus e trabalhar esses dados
-para que possam ser repassados para várias casos de usos. Considerando toda a infrastrutura
+para que possam ser repassados para vários casos de usos. Considerando toda a infrastrutura
 que isso abarca, é muito comum que as pessoas profissionais da área tenham um background
 em engenharia de software, já que ferramentas como Python, SQL, Java, Scala, bash, entre
 outros, são bastante utilizadas aqui.
