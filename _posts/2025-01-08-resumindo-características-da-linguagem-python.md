@@ -129,4 +129,4 @@ Fontes:
 
 [StackOverflow Compiled vs. Interpreted Languages](https://stackoverflow.com/questions/3265357/compiled-vs-interpreted-languages)
 
-[Como o interpretador do Python funciona? | Live de Python #218](https://www.youtube.com/watch?v=pxfZTAJDipY)
+[Como o interpretador do Python funciona? Live de Python #218](https://www.youtube.com/watch?v=pxfZTAJDipY)
