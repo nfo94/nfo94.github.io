@@ -8,7 +8,7 @@ published: true
 ---
 
 <figure align="center">
-  <img src="../../../assets/images/7/big-3520096_1280.webp" alt="imagem de notebook 
+  <img width="100%" src="../../../assets/images/7/big-3520096_1280.webp" alt="imagem de notebook 
   escrito 'big data' de Gerd Altmann no Pixabay">
   <figcaption><i>Imagem de <a href="https://pixabay.com/pt/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3520096">Gerd Altmann</a> por <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3520096">Pixabay</a></i></figcaption>
 </figure>
