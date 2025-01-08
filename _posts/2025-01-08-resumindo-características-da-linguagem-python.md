@@ -97,6 +97,8 @@ sobre isso:
 <img alt="cpython" src="../../../assets/images/6/cpython.webp"/>
 </div>
 
+Aí você pode ser perguntar:
+
 > _Mas qual a diferença entre esse processo e um processo de compilação de um linguagem
 > como Java?_
 
