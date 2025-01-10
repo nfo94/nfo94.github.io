@@ -8,11 +8,10 @@ published: true
 ---
 
 Faz algum tempo que comecei a perceber minha falta de paciência para prestar atenção em
-conteúdos escritos, coisa que não acontecia antes. Acredito que durante o período inicial
-aprendendo programação, depois das primeiras semanas lendo sobre arquitetura de
-computadores (a, digamos, "zetética" da programação), sinto que fiquei muito mal
-acostumada a buscar informações em vídeo (principalmente para a parte mais "dogmática" da
-programação). Com isso, no início de 2024, me propus a ler mais livros, para:
+conteúdos escritos, coisa que não acontecia antes. Acredito que fiquei mal acostumada a
+buscar informações em vídeo e, quanto mais avanço na área, mais percebo que conteúdos
+escritos às vezes são a única fonte de informação para determinados assuntos. Com isso,
+no início de 2024, me propus a ler mais livros, para:
 
 - Fortalecer o foco e forçar a atenção em conteúdos mais difíceis de se consumir
 - Exercitar o "não" a conteúdos de rede social/de conteúdo (exemplo: antes de ir dormir,
