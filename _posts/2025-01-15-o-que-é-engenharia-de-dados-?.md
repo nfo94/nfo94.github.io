@@ -23,7 +23,8 @@ do Joe Reis e Matt Housley como base.
 ## <a name="1"></a>O que é engenharia de dados?
 
 Engenharia de dados não é exatamente uma coisa nova e já existia de alguma forma em
-empresas, mas tomou mais foco e cresceu mais ou menos no mesmo período em que big data e ciências de dados começaram a aparecer nos holofotes da bolha tech.
+empresas, mas tomou mais foco e cresceu mais ou menos no mesmo período em que big data e
+ciências de dados começaram a aparecer nos holofotes da bolha tech.
 
 De forma resumida, podemos dizer que pessoas engenheiras de dados configuram e operam
 a infraestrutura de dados de um empresa, preparando esses dados para analistas de dados,
