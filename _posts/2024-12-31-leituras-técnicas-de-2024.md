@@ -12,7 +12,7 @@ conteúdos escritos, coisa que não acontecia antes. Acredito que durante o per�
 aprendendo programação, depois das primeiras semanas fazendo exercícios de lógica
 proposicional e lendo sobre arquitetura de computadores (a, digamos, "zetética" da
 programação), sinto que fiquei muito mal acostumada a buscar informações em vídeo
-(para a parte mais "dogmática" da programação). Com isso, no início desse ano
+(principalmente para a parte mais "dogmática" da programação). Com isso, no início
 de 2024, me propus a ler mais livros, para:
 
 - Fortalecer o foco e forçar a atenção em conteúdos mais difíceis de se consumir
@@ -22,8 +22,8 @@ de 2024, me propus a ler mais livros, para:
 - Ter contato inicial com temas específicos
 - Exercitar a reflexão
 
-Com isso resolvi unir o últil ao agradável e separar alguns livros técnicos para ler
-durante o ano, por completo. Essas foram as leituras que fiz em 2024:
+Resolvi unir o últil ao agradável e separar alguns livros técnicos para ler durante o ano,
+por completo. Essas foram as leituras que fiz em 2024:
 
 - [Designing Data-Intensive Applications](#1)
 - [Artificial Intelligence Basics](#2)
