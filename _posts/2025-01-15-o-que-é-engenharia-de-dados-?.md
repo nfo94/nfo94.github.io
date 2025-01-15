@@ -4,7 +4,7 @@ layout: post
 date: 2025-01-15
 tags: engenharia de dados, etl, banco de dados
 description: descrevendo e explicando o que é engenharia de dados e seu ciclo de vida
-published: false
+published: true
 ---
 
 <figure align="center">
