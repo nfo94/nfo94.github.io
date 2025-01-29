@@ -13,12 +13,12 @@ buscar informações em vídeo e, quanto mais avanço na área, mais percebo que
 escritos às vezes são a única fonte de informação para determinados assuntos. Com isso,
 no início de 2024, me propus a ler mais livros, para:
 
-- Fortalecer o foco e forçar a atenção em conteúdos mais difíceis de se consumir
+- Fortalecer o foco e forçar a atenção em conteúdos mais difíceis de se consumir;
 - Exercitar o "não" a conteúdos de rede social/de conteúdo (exemplo: antes de ir dormir,
   ler, ao invés de ficar olhando o celular);
-- Exercitar meu vocabulário (inglês e português)
-- Ter contato inicial com temas específicos
-- Exercitar a reflexão
+- Exercitar meu vocabulário (inglês e português);
+- Ter contato inicial com temas específicos;
+- Exercitar a reflexão.
 
 Resolvi unir o últil ao agradável e separar alguns livros técnicos para ler durante o ano,
 por completo. Essas foram as leituras que fiz em 2024:
