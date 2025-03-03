@@ -3,7 +3,7 @@ title: "Resumindo características da linguagem Python"
 layout: post
 date: 2025-01-08
 tags: python
-description: resumindo características de python
+description: resumo das características da linguagem Python
 published: true
 ---
 
