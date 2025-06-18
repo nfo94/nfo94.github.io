@@ -2,7 +2,7 @@
 title: "SOLID: single responsibility em Go e Python"
 layout: post
 date: 2025-06-18
-tags: solid, single responsibility principle, python, go
+tags: solid, single responsibility principle
 description: explicando o que é o single responsibility principle do SOLID, com exemplos em Python
 e em Go
 published: true
