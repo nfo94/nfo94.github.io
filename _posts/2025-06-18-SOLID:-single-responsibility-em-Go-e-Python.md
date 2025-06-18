@@ -3,8 +3,7 @@ title: "SOLID: single responsibility em Go e Python"
 layout: post
 date: 2025-06-18
 tags: solid, single responsibility principle
-description: explicando o que é o single responsibility principle do SOLID, com exemplos em Python
-e em Go
+description: explicando o que é o single responsibility principle do SOLID, com exemplos em Python e em Go
 published: true
 ---
 
@@ -40,6 +39,5 @@ Fontes:
 
 SCOTT, Corey. [Hands-On Dependency Injection in Go](https://www.amazon.com.br/Hands-Dependency-Injection-Corey-Scott/dp/1789132762).
 Packt, 2018.
-
 ANAYA, Mariano. [Clean Code in Python](https://www.amazon.com.br/Clean-Code-Python-maintainable-efficient/dp/1800560214).
 Packt, 2021.
