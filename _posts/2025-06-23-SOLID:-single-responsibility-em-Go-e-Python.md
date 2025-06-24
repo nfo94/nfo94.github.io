@@ -70,6 +70,29 @@ O ideal seria desacoplar essas múltiplas responsabilidades em outras classes:
 <img alt="single responsability" src="../../../assets/images/8/srp.webp"/>
 </div>
 
+O UML acima pode ser interpretado desse forma em Python:
+
+```python
+class Event:
+    pass
+
+class ActivityWatcher:
+    pass
+
+class SystemMonitor:
+    pass
+
+class Output:
+    pass
+
+class AlertSystem:
+    def __init__(self):
+        self._activity_watcher = ActivityWatcher()
+        self._system_monitor = SystemMonitor()
+        self._output_system = Output()
+    ...
+```
+
 ## <a name="3"></a>Como aplicar o single responsibility principle em Go?
 
 Aqui temos um ponto importante: Go não tem classes, mas podemos pensar na aplicação do SRP em Go
