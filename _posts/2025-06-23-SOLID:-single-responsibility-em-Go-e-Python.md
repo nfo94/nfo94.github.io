@@ -8,7 +8,8 @@ published: true
 ---
 
 Esse é o primeiro artigo de uma série sobre SOLID explicado com exemplos nas linguagens de
-programação Python e Go, da forma mais simples posssível, e iremos utilizar dois livros como base:
+programação Python e Go, da forma mais simples posssível, e iremos utilizar dois livros como base,
+um do Corey Scott e outro do Mariano Anaya:
 
 - [Hands-On Dependency Injection in Go](https://www.amazon.com.br/Hands-Dependency-Injection-Corey-Scott/dp/1789132762)
 - [Clean Code in Python](https://www.amazon.com.br/Clean-Code-Python-maintainable-efficient/dp/1800560214)
@@ -174,7 +175,7 @@ func (d *CSVPrinter) Output(data map[string]float64) {
 
 ---
 
-Flash da Jequiti do Silvio Santos para lembrar os princípios:
+Flash da Jequiti para lembrar os princípios:
 
 <div align="center">
 <img alt="solid" src="../../../assets/images/8/solid.webp"/>
