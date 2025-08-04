@@ -1,7 +1,7 @@
 ---
 title: "SOLID: open/closed principle em Go e Python"
 layout: post
-date: 2025-08-04
+date: 2025-08-11
 tags: solid, open/closed principle
 description: explicando o que é o open/closed principle do SOLID, com exemplos em Python e em Go
 published: true
@@ -14,6 +14,7 @@ Corey Scott e outro do Mariano Anaya:
 - [Hands-On Dependency Injection in Go](https://www.amazon.com.br/Hands-Dependency-Injection-Corey-Scott/dp/1789132762)
 - [Clean Code in Python](https://www.amazon.com.br/Clean-Code-Python-maintainable-efficient/dp/1800560214)
 
+Para atualizar os exemplos de Python do "Clean Code in Python" utilizaremos também o artigo do [Real Python](https://realpython.com/solid-principles-python/#open-closed-principle-ocp).
 Aqui iremos falar sobre o **open/closed principle**, ou **princípio aberto/fechado** em português.
 Perguntas para guiar nosso estudo:
 
@@ -43,7 +44,110 @@ podendo ser uma classe, módulo, função, etc, a ideia é a mesma.
 
 ## <a name="2"></a>Como aplicar o open/closed principle em Python?
 
-<!-- TODO -->
+O Mariano Anaya dá um exemplo interessante em seu livro, acompanhe meus comentários no código dele:
+
+```python
+from dataclasses import dataclass
+
+# O decorator `dataclass` dá a classe Python uma série de métodos e atributos básicos built-in
+# sem que a gente precise escrevê-los na mão, como um `__init__(self, raw_data: dict)`, por exemplo
+@dataclass
+class Event:
+    """`Event` é uma classe que define um evento"""
+    raw_data: dict
+
+# Cada classe abaixo herda do `Event` e especifica um tipo de evento. Imagine uma implementação
+# hipotética para cada uma
+class UnknownEvent(Event):
+    pass
+
+class LoginEvent(Event):
+    pass
+
+class LogoutEvent(Event):
+    pass
+
+class SystemMonitor:
+    """`SystemMonitor` identifica eventos na aplicação"""
+
+    # Inicializando o `SystemMonitor` com um atributo `event_data`
+    def __init__(self, event_data):
+        self.event_data = event_data
+
+    # Método para identificar um evento: se é um `LoginEvent`, `LogoutEvent` ou `UnknownEvent`
+    def identify_event(self):
+        if (
+            self.event_data["before"]["session"] == 0
+            and self.event_data["after"]["session"] == 1
+        ):
+            return LoginEvent(self.event_data)
+        elif (
+            self.event_data["before"]["session"] == 1
+            and self.event_data["after"]["session"] == 0
+        ):
+            return LogoutEvent(self.event_data)
+
+        return UnknownEvent(self.event_data)
+```
+
+Agora, imagine que queremos adicionar mais 3 eventos a essa aplicação. Você diria que o `SystemMonitor`
+está "aberto para extensão, fechado para modificação"? Pense bem na parte de "modificação". Para extender
+o monitoramento, além da inevitável adição de um novo evento (nova classe) precisaríamos modificar o
+`SystemMonitor` com um novo `elif`. Para conseguir cumprir o princípio precisamos, de alguma forma,
+fazer com que a lógica do `SystemMonitor` se mantenha e que a "responsabilidade" da nova feature seja
+justamente do novo código, do novo evento. Uma forma de fazer isso é como no código abaixo:
+
+<!-- TODO explicar código -->
+
+```python
+from dataclasses import dataclass
+
+@dataclass
+class Event:
+    raw_data: dict
+
+    @staticmethod
+    def meets_condition(event_data: dict):
+        return False
+
+class UnknownEvent(Event):
+    pass
+
+class LoginEvent(Event):
+    @staticmethod
+    def meets_condition(event_data: dict):
+        return (
+            event_data["before"]["session"] == 0
+            and event_data["after"]["session"] == 1
+        )
+
+class LogoutEvent(Event):
+    @staticmethod
+    def meets_condition(event_data: dict):
+        return (
+            event_data["before"]["session"] == 1
+            and event_data["after"]["session"] == 0
+        )
+
+# Novo evento
+class TransactionEvent(Event):
+    @staticmethod
+    def meets_condition(event_data: dict):
+        return event_data["after"].get("transaction") is not None
+
+class SystemMonitor:
+    def __init__(self, event_data):
+        self.event_data = event_data
+
+    def identify_event(self):
+        for event_cls in Event.__subclasses__():
+            try:
+                if event_cls.meets_condition(self.event_data):
+                    return event_cls(self.event_data)
+            except KeyError:
+                continue
+        return UnknownEvent(self.event_data)
+```
 
 ## <a name="3"></a>Como aplicar o open/closed principle em Go?
 
@@ -66,13 +170,13 @@ func BuildOutput(r http.ResponseWriter, format string, p Person) {
 	r.WriteHeader(http.StatusOK)
 }
 
-// função específica hipotética para csv
+// Função específica hipotética para csv
 func outputCSV(writer io.Writer, person Person) error {
 	// TODO: implementar
 	return nil
 }
 
-// função específica hipotética para json
+// Função específica hipotética para json
 func outputJSON(writer io.Writer, person Person) error {
 	// TODO: implementar
 	return nil
@@ -97,7 +201,7 @@ fica de não quebrar algo. Existe uma outra forma de escrever esse código:
 
 ```go
 func BuildOutput(r http.ResponseWriter, pf PersonFormatter, p Person) {
-  err := pf.Format(r, p) // chamamos um método hipotético Format de uma interface PersonFormatter
+  err := pf.Format(r, p) // Chamamos um método hipotético Format de uma interface PersonFormatter
   if err != nil {
     r.WriteHeader(http.StatusInternalServerError)
     return
@@ -106,14 +210,14 @@ func BuildOutput(r http.ResponseWriter, pf PersonFormatter, p Person) {
   r.WriteHeader(http.StatusOK)
 }
 
-// definindo comportamento/contrato através de uma interface
+// Definindo comportamento/contrato através de uma interface
 type PersonFormatter interface {
 	Format(writer io.Writer, person Person) error
 }
 
 type CSVPersonFormatter struct{}
 
-// implementação do Format para csv
+// Implementação do Format para csv
 func (c *CSVPersonFormatter) Format(writer io.Writer, person Person) error {
 	// TODO: implement
 	return nil
@@ -121,7 +225,7 @@ func (c *CSVPersonFormatter) Format(writer io.Writer, person Person) error {
 
 type JSONPersonFormatter struct{}
 
-// implementação do format para JSON
+// Implementação do format para JSON
 func (j *JSONPersonFormatter) Format(writer io.Writer, person Person) error {
 	// TODO: implement
 	return nil
@@ -147,7 +251,7 @@ formato, como o `xml`, já sabemos onde precisamos olhar se os testes quebrarem:
 type XMLPersonFormatter struct{}
 
 func (c *XMLPersonFormatter) Format(writer io.Writer, person Person) error {
-	// se passou a quebrar depois do PR que implementa isso aqui, estamos diante de uma implementação
+	// Se passou a quebrar depois do PR que implementa isso aqui, estamos diante de uma implementação
     // safada com bug
 	return nil
 }
@@ -170,3 +274,5 @@ Packt, 2021.
 
 SCOTT, Corey. [Hands-On Dependency Injection in Go](https://www.amazon.com.br/Hands-Dependency-Injection-Corey-Scott/dp/1789132762).
 Packt, 2018.
+
+[SOLID Principles: Improve Object-Oriented Design in Python - Real Python](https://realpython.com/solid-principles-python/#open-closed-principle-ocp)
