@@ -57,7 +57,7 @@ class Event:
     raw_data: dict
 
 # Cada classe abaixo herda do `Event` e especifica um tipo de evento. Imagine uma implementação
-# hipotética para cada uma
+# hipotética do que cada uma faz ou tem
 class UnknownEvent(Event):
     pass
 
@@ -92,20 +92,23 @@ class SystemMonitor:
 
 Agora, imagine que queremos adicionar mais 3 eventos a essa aplicação. Você diria que o `SystemMonitor`
 está "aberto para extensão, fechado para modificação"? Pense bem na parte de "modificação". Para extender
-o monitoramento, além da inevitável adição de um novo evento (nova classe) precisaríamos modificar o
+o monitoramento, além da inevitável adição de um novo evento (nova subclasse) precisaríamos modificar o
 `SystemMonitor` com um novo `elif`. Para conseguir cumprir o princípio precisamos, de alguma forma,
-fazer com que a lógica do `SystemMonitor` se mantenha e que a "responsabilidade" da nova feature seja
-justamente do novo código, do novo evento. Uma forma de fazer isso é como no código abaixo:
+fazer com que a lógica do `SystemMonitor` "seja uma só" e que a "responsabilidade" da nova feature
+seja justamente do novo código, do novo evento. Uma forma de fazer isso é como no código abaixo:
 
 <!-- TODO explicar código -->
 
 ```python
 from dataclasses import dataclass
 
+# A classe `Event` é a nossa classe "genérica"
 @dataclass
 class Event:
     raw_data: dict
 
+    # Queremos abstrair a identificação do evento, e aqui exemplificamos uma interface comum para
+    # todos os eventos seguirem
     @staticmethod
     def meets_condition(event_data: dict):
         return False
@@ -114,6 +117,9 @@ class UnknownEvent(Event):
     pass
 
 class LoginEvent(Event):
+    # Agora cada nova subclasse de `Event` implementa seu próprio `meets_condition`. Esse método
+    # recebe um dicionário `event_data` e computa uma lógica para definir se é o tipo de evento em
+    # questão ou não
     @staticmethod
     def meets_condition(event_data: dict):
         return (
@@ -129,7 +135,7 @@ class LogoutEvent(Event):
             and event_data["after"]["session"] == 0
         )
 
-# Novo evento
+# Novo evento. Repare em como basta implementar sua lógica, seguindo a "interface" da classe genérica
 class TransactionEvent(Event):
     @staticmethod
     def meets_condition(event_data: dict):
@@ -140,18 +146,101 @@ class SystemMonitor:
         self.event_data = event_data
 
     def identify_event(self):
+        # Agora para identificar o evento usamos o método mágico (dunder/magic method)
+        # `__subclasses__()` para "olhar" as subclasses do `Event`
         for event_cls in Event.__subclasses__():
             try:
+                # Chamando a implementação de clada subclasse passando o `event_data`, e a partir
+                # daí a lógica é responsabilidade de cada evento
                 if event_cls.meets_condition(self.event_data):
+                    # Se satisfaz a condição para ser o evento, retorne a subclasse com os dados do
+                    # evento
                     return event_cls(self.event_data)
             except KeyError:
                 continue
         return UnknownEvent(self.event_data)
 ```
 
+Com o exemplo acima não precisamos ficar alterando o `SystemMonitor` toda vez que um evento novo
+for criado, bastará apenas criar uma nova subclasse e implementar a interface da classe genérica
+`Event`.
+
+> _Poxa, mas não tem um exemplo mais moderno e mais simples não, sem usar `__subclasses__()`?_
+
+Exatamente o que pensei ao ler o código, e pensei logo no pacote `abc` do Python. Logo em seguida o
+autor Mariano Anaya citou a possiblidade de fazer de outras formas, justamente com o `abc`. Vejamos
+o exemplo do site Real Python:
+
+```python
+from math import pi
+
+class Shape:
+    # Inicializamos a class recebendo um `shape_type` e `kwargs`
+    def __init__(self, shape_type, **kwargs):
+        self.shape_type = shape_type
+        # Para definir `height` e `width` vamos de `if` e `elif` até dizer chega
+        if self.shape_type == "rectangle":
+            self.width = kwargs["width"]
+            self.height = kwargs["height"]
+        elif self.shape_type == "circle":
+            self.radius = kwargs["radius"]
+
+    # Método para calcular a área a depender do tipo de forma
+    def calculate_area(self):
+        if self.shape_type == "rectangle":
+            return self.width * self.height
+        elif self.shape_type == "circle":
+            return pi * self.radius**2
+```
+
+Consegue ver o padrão se repetir aqui? Adicionar mais tipos de formas, de shapes, faz com que tenhamos
+que modificar a classe com mais `if`. Podemos utilizar essa classe para criar diferentes formas, e
+ela funciona, mas não segue o princípio open/closed. Uma possível solução:
+
+```python
+from abc import ABC, abstractmethod
+from math import pi
+
+# Finalmente, estamos usando o pacote `abc`! Na nossa classe genérica, `Shape`, também chamada de
+# classe abstrata, e herdamos de `ABC`
+class Shape(ABC):
+    def __init__(self, shape_type):
+        self.shape_type = shape_type
+
+    # E aqui criamos um método abstrato com o `abstractmethod`. Quem quiser que implemente 😒💅
+    @abstractmethod
+    def calculate_area(self):
+        pass
+
+# `Circle`, um tipo de `Shape`, herda de `Shape`, nossa classe abstrata
+class Circle(Shape):
+    def __init__(self, radius):
+        # Chamando o construtor da superclasse, passando o tipo de forma
+        super().__init__("circle")
+        self.radius = radius
+
+    # Implementando o `calculate_area` do `Circle`
+    def calculate_area(self):
+        return pi * self.radius**2
+
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        super().__init__("rectangle")
+        self.width = width
+        self.height = height
+
+    # Implementando o `calculate_area` do `Rectangle` e por aí vai. Quem pegou o bonde andando não
+    # senta na janela: implemente sua poha
+    def calculate_area(self):
+        return self.width * self.height
+```
+
+Agora podemos dizer que nosso `Shape` aberto para extensão e fechado para modificação.
+
 ## <a name="3"></a>Como aplicar o open/closed principle em Go?
 
-Vejamos um exemplo do Corey Scott de uma função que formata um output a depender do tipo do arquivo:
+Agora vamos ver como isso funciona em Go. Vejamos um exemplo do autor Corey Scott de uma função que
+formata um output a depender do tipo do arquivo:
 
 ```go
 func BuildOutput(r http.ResponseWriter, format string, p Person) {
