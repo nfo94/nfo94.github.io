@@ -97,8 +97,6 @@ o monitoramento, além da inevitável adição de um novo evento (nova subclasse
 fazer com que a lógica do `SystemMonitor` "seja uma só" e que a "responsabilidade" da nova feature
 seja justamente do novo código, do novo evento. Uma forma de fazer isso é como no código abaixo:
 
-<!-- TODO explicar código -->
-
 ```python
 from dataclasses import dataclass
 
