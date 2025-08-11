@@ -49,15 +49,16 @@ O Mariano Anaya dá um exemplo interessante em seu livro, acompanhe meus coment�
 ```python
 from dataclasses import dataclass
 
-# O decorator `dataclass` dá a classe Python uma série de métodos e atributos básicos built-in
-# sem que a gente precise escrevê-los na mão, como um `__init__(self, raw_data: dict)`, por exemplo
+# O decorator `dataclass` dá a classe Python uma série de métodos
+# e atributos básicos built-in sem que a gente precise escrevê-los
+# na mão, como um `__init__(self, raw_data: dict)`, por exemplo
 @dataclass
 class Event:
     """`Event` é uma classe que define um evento"""
     raw_data: dict
 
-# Cada classe abaixo herda do `Event` e especifica um tipo de evento. Imagine uma implementação
-# hipotética do que cada uma faz ou tem
+# Cada classe abaixo herda do `Event` e especifica um tipo de evento.
+# Imagine uma implementação hipotética do que cada uma faz ou tem
 class UnknownEvent(Event):
     pass
 
@@ -74,7 +75,8 @@ class SystemMonitor:
     def __init__(self, event_data):
         self.event_data = event_data
 
-    # Método para identificar um evento: se é um `LoginEvent`, `LogoutEvent` ou `UnknownEvent`
+    # Método para identificar um evento: se é um `LoginEvent`,
+    # `LogoutEvent` ou `UnknownEvent`
     def identify_event(self):
         if (
             self.event_data["before"]["session"] == 0
@@ -105,8 +107,9 @@ from dataclasses import dataclass
 class Event:
     raw_data: dict
 
-    # Queremos abstrair a identificação do evento, e aqui exemplificamos uma interface comum para
-    # todos os eventos seguirem
+    # Queremos abstrair a identificação do evento, e aqui
+    # exemplificamos uma interface comum para todos os
+    # eventos seguirem
     @staticmethod
     def meets_condition(event_data: dict):
         return False
@@ -115,9 +118,10 @@ class UnknownEvent(Event):
     pass
 
 class LoginEvent(Event):
-    # Agora cada nova subclasse de `Event` implementa seu próprio `meets_condition`. Esse método
-    # recebe um dicionário `event_data` e computa uma lógica para definir se é o tipo de evento em
-    # questão ou não
+    # Agora cada nova subclasse de `Event` implementa seu
+    # próprio `meets_condition`. Esse método recebe um
+    # dicionário `event_data` e computa uma lógica para
+    # definir se é o tipo de evento em questão ou não
     @staticmethod
     def meets_condition(event_data: dict):
         return (
@@ -133,7 +137,8 @@ class LogoutEvent(Event):
             and event_data["after"]["session"] == 0
         )
 
-# Novo evento. Repare em como basta implementar sua lógica, seguindo a "interface" da classe genérica
+# Novo evento. Repare em como basta implementar sua lógica,
+# seguindo a "interface" da classe genérica
 class TransactionEvent(Event):
     @staticmethod
     def meets_condition(event_data: dict):
@@ -144,14 +149,17 @@ class SystemMonitor:
         self.event_data = event_data
 
     def identify_event(self):
-        # Agora para identificar o evento usamos o método mágico (dunder/magic method)
-        # `__subclasses__()` para "olhar" as subclasses do `Event`
+        # Agora para identificar o evento usamos o método
+        # mágico (dunder/magic method) `__subclasses__()`
+        # para "olhar" as subclasses do `Event`
         for event_cls in Event.__subclasses__():
             try:
-                # Chamando a implementação de clada subclasse passando o `event_data`, e a partir
-                # daí a lógica é responsabilidade de cada evento
+                # Chamando a implementação de clada subclasse
+                # passando o `event_data`, e a partir daí a
+                # lógica é responsabilidade de cada evento
                 if event_cls.meets_condition(self.event_data):
-                    # Se satisfaz a condição para ser o evento, retorne a subclasse com os dados do
+                    # Se satisfaz a condição para ser o evento,
+                    # retorne a subclasse com os dados do
                     # evento
                     return event_cls(self.event_data)
             except KeyError:
@@ -176,7 +184,8 @@ class Shape:
     # Inicializamos a class recebendo um `shape_type` e `kwargs`
     def __init__(self, shape_type, **kwargs):
         self.shape_type = shape_type
-        # Para definir `height` e `width` vamos de `if` e `elif` até dizer chega
+        # Para definir `height` e `width` vamos de `if` e `elif`
+        # até dizer chega
         if self.shape_type == "rectangle":
             self.width = kwargs["width"]
             self.height = kwargs["height"]
@@ -199,21 +208,25 @@ ela funciona, mas não segue o princípio open/closed. Uma possível solução:
 from abc import ABC, abstractmethod
 from math import pi
 
-# Finalmente, estamos usando o pacote `abc`! Na nossa classe genérica, `Shape`, também chamada de
-# classe abstrata, e herdamos de `ABC`
+# Finalmente, estamos usando o pacote `abc`! Na nossa
+# classe genérica, `Shape`, também chamada de classe abstrata,
+# e herdamos de `ABC`
 class Shape(ABC):
     def __init__(self, shape_type):
         self.shape_type = shape_type
 
-    # E aqui criamos um método abstrato com o `abstractmethod`. Quem quiser que implemente 😒💅
+    # E aqui criamos um método abstrato com o `abstractmethod`.
+    # Quem quiser que implemente 😒💅
     @abstractmethod
     def calculate_area(self):
         pass
 
-# `Circle`, um tipo de `Shape`, herda de `Shape`, nossa classe abstrata
+# `Circle`, um tipo de `Shape`, herda de `Shape`, nossa
+# classe abstrata
 class Circle(Shape):
     def __init__(self, radius):
-        # Chamando o construtor da superclasse, passando o tipo de forma
+        # Chamando o construtor da superclasse, passando
+        # o tipo de forma
         super().__init__("circle")
         self.radius = radius
 
@@ -227,8 +240,9 @@ class Rectangle(Shape):
         self.width = width
         self.height = height
 
-    # Implementando o `calculate_area` do `Rectangle` e por aí vai. Quem pegou o bonde andando não
-    # senta na janela: implemente sua poha
+    # Implementando o `calculate_area` do `Rectangle` e
+    # por aí vai. Quem pegou o bonde andando não senta na
+    # janela: implemente sua poha
     def calculate_area(self):
         return self.width * self.height
 ```
@@ -288,7 +302,9 @@ fica de não quebrar algo. Existe uma outra forma de escrever esse código:
 
 ```go
 func BuildOutput(r http.ResponseWriter, pf PersonFormatter, p Person) {
-  err := pf.Format(r, p) // Chamamos um método hipotético Format de uma interface PersonFormatter
+  // Chamamos um método hipotético Format de uma interface
+  // PersonFormatter
+  err := pf.Format(r, p)
   if err != nil {
     r.WriteHeader(http.StatusInternalServerError)
     return
@@ -338,8 +354,9 @@ formato, como o `xml`, já sabemos onde precisamos olhar se os testes quebrarem:
 type XMLPersonFormatter struct{}
 
 func (c *XMLPersonFormatter) Format(writer io.Writer, person Person) error {
-	// Se passou a quebrar depois do PR que implementa isso aqui, estamos diante de uma implementação
-    // safada com bug
+	// Se passou a quebrar depois do PR que implementa isso
+    // aqui, estamos diante de uma implementação safada com
+    // bug
 	return nil
 }
 ```
