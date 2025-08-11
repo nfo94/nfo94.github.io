@@ -2,7 +2,7 @@
 title: "SOLID: open/closed principle em Go e Python"
 layout: post
 date: 2025-08-11
-tags: solid, open/closed principle
+tags: solid, open closed principle
 description: explicando o que é o open/closed principle do SOLID, com exemplos em Python e em Go
 published: true
 ---
