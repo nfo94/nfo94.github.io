@@ -354,7 +354,7 @@ formato, como o `xml`, já sabemos onde precisamos olhar se os testes quebrarem:
 type XMLPersonFormatter struct{}
 
 func (c *XMLPersonFormatter) Format(writer io.Writer, person Person) error {
-	// Se passou a quebrar depois do PR que implementa isso
+    // Se passou a quebrar depois do PR que implementa isso
     // aqui, estamos diante de uma implementação safada com
     // bug
 	return nil
