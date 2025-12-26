@@ -51,7 +51,7 @@ Design with Golang” para consolidar melhor os conceitos. DDD definitivamente n
 ser?).
 
 <div align="center">
-<img alt="solid" src="../../../assets/images/9/dddd.webp"/>
+<img width="55%" alt="domain driven design distilled" src="../../../assets/images/9/dddd.webp"/>
 </div>
 
 ## <a name="2"></a>How AI Works
@@ -71,7 +71,7 @@ Por fim: altamente recomendado. Leia 5 páginas, se você não for fisgado(a) po
 está morto(a) por dentro.
 
 <div align="center">
-<img alt="solid" src="../../../assets/images/9/haiw.webp"/>
+<img width="55%" alt="how ai works" src="../../../assets/images/9/haiw.webp"/>
 </div>
 
 ## <a name="3"></a>Software Architecture Patterns
@@ -85,7 +85,7 @@ quem escreveu juntamente com Neal Ford o "Fundamentals of Software Architecture"
 seria uma boa começar por esse reporte, assim como fiz com o Domain Driven Design Distilled.
 
 <div align="center">
-<img alt="solid" src="../../../assets/images/9/sap.webp"/>
+<img width="55%" alt="software architecture patterns" src="../../../assets/images/9/sap.webp"/>
 </div>
 
 ## <a name="4"></a>Artificial Intelligence, a guide for thinking humans
@@ -99,7 +99,7 @@ estava escrevendo teses sobre inteligência artificial.
 Recomendo fortemente.
 
 <div align="center">
-<img alt="solid" src="../../../assets/images/9/aiagfth.webp"/>
+<img width="55%" alt="artifitiall intelligence, a guide for thinking humans" src="../../../assets/images/9/aiagfth.webp"/>
 </div>
 
 ## <a name="5"></a>Product Management in Practice
@@ -119,7 +119,7 @@ positivos quanto negativos, no contexto de produto de uma empresa, e sugere comu
 frases prontas mesmo, para lidar com diversas situações.
 
 <div align="center">
-<img alt="solid" src="../../../assets/images/9/pmip.webp"/>
+<img width="55%" alt="product management in practice" src="../../../assets/images/9/pmip.webp"/>
 </div>
 
 ## <a name="6"></a>Prompt Engineering for LLMs
@@ -138,7 +138,7 @@ assunto. Não tenha vergonha, somos todos burros, só no LinkedIn todo mundo par
 em inteligência artificial.
 
 <div align="center">
-<img alt="solid" src="../../../assets/images/9/pefl.webp"/>
+<img width="55%" alt="prompt engineering for llms" src="../../../assets/images/9/pefl.webp"/>
 </div>
 
 ## <a name="7"></a>Identity Security for Software Development
@@ -151,7 +151,7 @@ livro serviu para me dar uma visão mais macro sobre isso: segurança de identid
 soluções de gerenciamento, na cloud, no Kubernetes e pipelines de CI/CD.
 
 <div align="center">
-<img alt="solid" src="../../../assets/images/9/issd.webp"/>
+<img width="55%" alt="identity security for software development" src="../../../assets/images/9/issd.webp"/>
 </div>
 
 ## <a name="8"></a>Concurrency in Go
@@ -164,7 +164,7 @@ Os primeiros capítulos já entregam muito conteúdo e exemplos, e fica claro qu
 adequado a quem já tem conhecimento em programação e na linguagem Go.
 
 <div align="center">
-<img alt="solid" src="../../../assets/images/9/cg.webp"/>
+<img width="55%" alt="concurrency in go" src="../../../assets/images/9/cg.webp"/>
 </div>
 
 ## <a name="9"></a>Web Security for Developers
@@ -177,7 +177,7 @@ tipos de ataques. São 18 capítulos e na parte II vemos com detalhes os tipos.
 No geral, um livro excelente e recomendado.
 
 <div align="center">
-<img alt="solid" src="../../../assets/images/9/wsd.webp"/>
+<img width="55%" alt="web security for developers" src="../../../assets/images/9/wsd.webp"/>
 </div>
 
 ---
