@@ -8,7 +8,7 @@ published: true
 ---
 
 Desde 2024 me propus a trocar tempo inútil de tela por leitura, não importando o tipo, e confesso
-que o resultado foi fenomenal! Em 2024 li por completo 4 livros técnicos e 2 não-técnicos,
+que o resultado foi fenomenal. Em 2024 li por completo 4 livros técnicos e 2 não-técnicos,
 e [publiquei sobre os técnicos aqui](https://nfo94.github.io/2024/12/31/leituras-t%C3%A9cnicas-de-2024.html).
 Como não publiquei sobre os não-técnicos de 2024 irei listá-los aqui:
 
@@ -203,5 +203,5 @@ técnicos é a forma mais rápida para ficar bitolado e sem diversidade de assun
   fica brutal, com muita ação e decisões que são a carinha da humanidade.
 
 Atualmente estou lendo **Cibola Burn**, pensando nos conflitos internacionais que a colonização de
-Marte irá causar. De livro técnico estou lendo **Tidy First**, mas estou na parte menos interessante,
-sem código (hehe!).
+Marte irá causar no nossa mundo. De livro técnico estou lendo **Tidy First**, mas estou na parte
+menos interessante, sem código (hehe!).
